@@ -7,7 +7,6 @@ This repository contains translations for [FeatherPanel](https://github.com/Myth
 ```
 translations/
 ├── languages/          # Translation JSON files (en.json, ro.json, etc.)
-├── upstream/           # Git submodule pointing to FeatherPanel repository
 ├── data/
 │   └── mappings.json   # Language code mappings and metadata
 ├── scripts/            # Node.js validation and utility scripts
@@ -32,18 +31,15 @@ See `data/mappings.json` for the complete list of supported languages and their 
 ### Installation
 
 ```bash
-# Clone with submodules
-git clone --recursive <repository-url>
+# Clone the repository
+git clone <repository-url>
 cd translations
-
-# Or if already cloned, initialize submodules
-git submodule update --init --recursive
-
-# Or use the setup script
-npm run setup:submodule
 
 # Install dependencies (no external dependencies needed)
 npm install
+
+# Sync en.json from upstream
+npm run sync:en
 ```
 
 ## Scripts
@@ -61,7 +57,7 @@ npm install
 
 ## Translation Guidelines
 
-1. **Base Language**: `en.json` is a symlink to the upstream file and always matches the upstream repository automatically
+1. **Base Language**: `en.json` is synced from the upstream repository and should always match the latest version
 2. **Structure**: All translation files must maintain the same nested structure as `en.json`
 3. **Keys**: All translation files must contain all keys present in `en.json`
 4. **Formatting**: Use 4 spaces for indentation (JSON formatting is validated automatically)
@@ -94,48 +90,21 @@ This repository uses GitHub Actions to automatically:
 
 ## Upstream Sync
 
-The `languages/en.json` file is a **symlink** pointing directly to the upstream FeatherPanel repository file at `upstream/frontendv2/public/locales/en.json`. This ensures it always reflects the latest upstream version.
+The `languages/en.json` file is synced directly from the upstream FeatherPanel repository using the raw GitHub URL.
 
-### Initial Setup
+### Syncing en.json
 
-When cloning this repository, make sure to include submodules:
-
-```bash
-git clone --recursive <repository-url>
-```
-
-If you've already cloned without submodules:
-
-```bash
-git submodule update --init --recursive
-npm run sync:en
-```
-
-### Setting up the Symlink
-
-The `sync:en` script will:
-1. Initialize/update the upstream submodule
-2. Create a symlink from `languages/en.json` → `upstream/frontendv2/public/locales/en.json`
+To sync `en.json` from the latest upstream version:
 
 ```bash
 npm run sync:en
 ```
 
-**Note:** On Windows, symlinks may require:
-- Administrator privileges, OR
-- Developer Mode enabled (Settings → Update & Security → For developers → Developer Mode)
+This will:
+1. Download `en.json` from `https://raw.githubusercontent.com/MythicalLTD/FeatherPanel/main/frontendv2/public/locales/en.json`
+2. Format and save it to `languages/en.json`
 
-If symlinks aren't supported, the script will fall back to copying the file.
-
-### Updating to Latest Upstream
-
-To get the latest changes from upstream:
-
-```bash
-git submodule update --remote upstream
-```
-
-Since `en.json` is a symlink, it will automatically reflect the updated file. If you used the copy fallback, run `npm run sync:en` again.
+The file is downloaded directly from GitHub, so no submodules or complex setup is required.
 
 ## License
 

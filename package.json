@@ -8,16 +8,15 @@
     "validate:missing": "node scripts/validate-missing.js",
     "validate:mappings": "node scripts/validate-mappings.js",
     "validate:all": "npm run validate:json && npm run validate:mappings && npm run validate:missing",
-    "sync:en": "node scripts/sync-en.js",
-    "setup:submodule": "node scripts/setup-submodule.js"
+    "sync:en": "node scripts/sync-en.js"
   },
   "keywords": [
     "featherpanel",
     "translations",
     "i18n"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "MythicalSystems",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {}
 }
