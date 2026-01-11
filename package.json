@@ -1,0 +1,23 @@
+{
+  "name": "featherpanel-translations",
+  "version": "1.0.0",
+  "description": "Translations pack for FeatherPanel",
+  "main": "index.js",
+  "scripts": {
+    "validate:json": "node scripts/validate-json.js",
+    "validate:missing": "node scripts/validate-missing.js",
+    "validate:mappings": "node scripts/validate-mappings.js",
+    "validate:all": "npm run validate:json && npm run validate:mappings && npm run validate:missing",
+    "sync:en": "node scripts/sync-en.js",
+    "setup:submodule": "node scripts/setup-submodule.js"
+  },
+  "keywords": [
+    "featherpanel",
+    "translations",
+    "i18n"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
