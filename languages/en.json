@@ -11,7 +11,74 @@
             "create_account": "Create account",
             "discord": "Discord",
             "or_continue": "Or continue with",
-            "sso": "Single Sign-On"
+            "sso": "Single Sign-On",
+            "passwordLogin": "Password",
+            "emailLogin": "Email Code",
+            "email": "Email Address",
+            "success": "Login successful",
+            "step1Title": "Enter your email or username",
+            "step1Subtitle": "We'll check what login methods are available",
+            "welcomeBack": "Welcome back!",
+            "continueWithPassword": "Enter your password to continue",
+            "or": "or",
+            "requestLoginCode": "Request Login Code",
+            "usePasswordInstead": "Use Password Instead",
+            "useDifferentAccount": "Use a different account",
+            "step1_title": "Enter your email or username",
+            "step1_subtitle": "We'll check what login methods are available",
+            "welcome_back": "Welcome back!",
+            "continue_with_password": "Enter your password to continue",
+            "request_login_code": "Request Login Code",
+            "use_password_instead": "Use Password Instead",
+            "use_different_account": "Use a different account",
+            "ldapProvider": "LDAP Provider",
+            "ldapUsername": "LDAP Username",
+            "ldapUsernamePlaceholder": "Enter your LDAP username",
+            "selectLdapProvider": "Please select an LDAP provider",
+            "ldapLogin": "LDAP Login",
+            "ldapLoginDescription": "Use your directory account",
+            "ldapLoginTitle": "Directory sign in",
+            "ldapLoginSubtitle": "Choose your provider and sign in with your LDAP credentials.",
+            "loginWithLdap": "Login with LDAP"
+        },
+        "emailLogin": {
+            "title": "Email Login",
+            "subtitle": "Enter your email to receive a 6-digit login code",
+            "sendCode": "Send Login Code",
+            "enterCode": "Enter Login Code",
+            "codeSentTo": "A 6-digit code has been sent to {email}",
+            "code": "6-Digit Code",
+            "codeSent": "If this email exists, a login code has been sent.",
+            "resend": "Resend Code",
+            "invalidCode": "Please enter a valid 6-digit code"
+        },
+        "passkey": {
+            "signIn": "Sign in with passkey",
+            "unavailable": "Passkey sign-in is not available right now.",
+            "noneForAccount": "No passkeys are registered for this account.",
+            "emptyList": "You have not added any passkeys yet.",
+            "failed": "Passkey sign-in failed.",
+            "title": "Passkeys",
+            "description": "Sign in without a password using your device PIN, fingerprint, or security key.",
+            "add": "Add passkey",
+            "added": "Passkey added",
+            "removed": "Passkey removed",
+            "remove": "Remove",
+            "loadFailed": "Could not load passkeys",
+            "registerFailed": "Could not register passkey",
+            "removeFailed": "Could not remove passkey",
+            "unnamed": "Passkey",
+            "addedOn": "Added {date}",
+            "rename": "Rename passkey",
+            "renamed": "Passkey name updated",
+            "renameFailed": "Could not update passkey name",
+            "addDialogTitle": "Add a passkey",
+            "addDialogDescription": "Optionally give it a name so you can tell devices apart. Your browser will ask you to confirm with your PIN, fingerprint, or security key.",
+            "nameLabel": "Display name",
+            "namePlaceholder": "e.g. Work laptop, YubiKey 5",
+            "continueRegistration": "Continue",
+            "renameDialogTitle": "Rename passkey",
+            "renameDialogDescription": "Choose a name you will recognize when signing in or managing devices."
         },
         "register": {
             "title": "Create an account",
@@ -74,7 +141,24 @@
             "copied": "Copied to clipboard!",
             "setting_up": "Setting up two-factor authentication..."
         },
-        "logout": {},
+        "logout": {
+            "title": "Logging out...",
+            "subtitle": "Please wait while we securely log you out and clean up your session.",
+            "cleaning_up": "Cleaning up...",
+            "taking_too_long": "Taking longer than expected?",
+            "continue_to_login": "Continue to Login"
+        },
+        "verify_email": {
+            "verifying": "Verifying your email...",
+            "missing_token": "Missing verification token.",
+            "success": "Email verified successfully.",
+            "failed": "Failed to verify email.",
+            "success_title": "Email verified",
+            "failed_title": "Verification failed",
+            "continue_to_login": "Continue to login",
+            "resend": "Resend verification email",
+            "resend_sent": "If this account still needs verification, a new email is on its way."
+        },
         "loginSuccess": "Login successful",
         "ssoLoggingIn": "Logging in via SSO...",
         "ssoPleaseWait": "Please wait while we log you in...",
@@ -85,6 +169,12 @@
             "submit": "Link Account",
             "success": "Discord account linked successfully! Redirecting...",
             "cancel": "Cancel"
+        },
+        "discordRegistration": {
+            "title": "Register with Discord",
+            "question": "Would you like to create a new FeatherPanel account using your Discord account?",
+            "submit": "Yes, Create Account",
+            "cancel": "No, Cancel"
         }
     },
     "public_portal": {
@@ -144,9 +234,11 @@
         "total": "Total",
         "status": "Status",
         "deleting": "Deleting...",
+        "current": "Current",
         "enable": "Enable",
         "copiedToClipboard": "Copied to clipboard",
         "copied_to_clipboard": "Copied to clipboard",
+        "copy_to_clipboard": "Copy to clipboard",
         "reload": "Reload",
         "retry": "Retry",
         "actionsCannotBeUndone": "Actions cannot be undone",
@@ -156,6 +248,7 @@
         "warning": "Warning",
         "saving": "Saving...",
         "show": "Show",
+        "back": "Back",
         "optional": "Optional",
         "goBack": "Go Back",
         "success": "Success",
@@ -177,9 +270,11 @@
         "events": "events",
         "users": "users",
         "confirm": "Confirm",
-        "back": "Back",
         "search": "Search",
+        "select": "Select",
         "copy": "Copy",
+        "format": "Format",
+        "format_document": "Format Document",
         "time": {
             "just_now": "Just now",
             "hours_ago": "{count} hour{s} ago",
@@ -192,7 +287,10 @@
         "copied": "Copied to clipboard",
         "failed": "Failed",
         "importing": "Importing...",
+        "not_available": "—",
         "nA": "N/A",
+        "no_data": "No data",
+        "no_content": "No content",
         "noPermission": "You do not have permission to perform this action.",
         "pending": "Pending",
         "pleaseFixErrors": "Please fix the errors below.",
@@ -217,15 +315,31 @@
         "inactive": "Inactive",
         "enabled": "Enabled",
         "disabled": "Disabled",
-        "save_changes": "Save Changes"
+        "dismiss": "Dismiss",
+        "closePanel": "Close panel",
+        "loadingApp": "Loading {appName}",
+        "initializingApplication": "Initializing application...",
+        "save_changes": "Save Changes",
+        "hacker_easter_egg": {
+            "title": "Look what you have done script kiddy.",
+            "description": "Hahahah how funny you are you think you're a hacker or something? Okay then, let's see how you get rid of me."
+        }
     },
     "branding": {
         "running_on": "Running on {name} {version}",
-        "copyright": "{company}"
+        "copyright": "{company}",
+        "powered_by": "Powered by FeatherPanel"
+    },
+    "maintenance": {
+        "title": "System Maintenance",
+        "message": "We are currently upgrading our systems to provide you with a better experience. We'll be back shortly.",
+        "status": "In Progress",
+        "check_again": "Check Again"
     },
     "validation": {
         "required": "This field is required",
         "email": "Please enter a valid email address",
+        "invalid_email": "Please enter a valid email address",
         "min_length": "Must be at least {min} characters",
         "password_mismatch": "Passwords do not match",
         "invalid_username": "Username can only contain letters, numbers, and underscores",
@@ -235,7 +349,9 @@
         "username_length": "Username must be between {min} and {max} characters",
         "email_length": "Email must be between {min} and {max} characters",
         "password_length": "Password must be between {min} and {max} characters",
-        "captcha_required": "Please complete the CAPTCHA verification"
+        "captcha_required": "Please complete the CAPTCHA verification",
+        "verification_code_6_digits": "Verification code must be 6 digits",
+        "email_required": "Email is required"
     },
     "dashboard": {
         "title": "Dashboard",
@@ -266,7 +382,17 @@
             "statusPageDisabled": "Status Page Disabled",
             "statusPageDisabledDescription": "The public infrastructure status page has been disabled by the administrator.",
             "searchPlaceholder": "Search nodes...",
-            "noNodesFound": "No nodes found"
+            "noNodesFound": "No nodes found",
+            "core": "core",
+            "cores": "cores",
+            "playersOnline": "Players Online",
+            "viewInAdmin": "View in Admin",
+            "cpuShort": "CPU",
+            "ramShort": "RAM",
+            "diskShort": "DISK",
+            "unhealthyNodes": "Unhealthy Nodes",
+            "clickToExpand": "Click to expand",
+            "nodeDetails": "Node Details"
         },
         "stats": {},
         "recent_servers": {
@@ -286,6 +412,9 @@
             "no_vms": "No virtual machines available",
             "create_first": "Create your first resource to get started",
             "loading": "Loading resources..."
+        },
+        "favorite_servers": {
+            "title": "Favorite servers"
         },
         "announcements": {},
         "tickets": {
@@ -318,6 +447,39 @@
             "of": "of",
             "attachments": "Attachments",
             "no_articles_desc": "No articles found in this category."
+        },
+        "recent_mails": {
+            "title": "Recent mail",
+            "subtitle": "Latest system emails sent to you",
+            "view_all": "View all mail",
+            "open_mail_tab": "Open mail inbox"
+        },
+        "layout": {
+            "customize": "Customize",
+            "customize_layout": "Customize layout",
+            "stop_customizing": "Stop customizing",
+            "stop": "Done",
+            "swap_columns": "Swap columns",
+            "hero_bottom": "Banner at bottom",
+            "hero_top": "Banner at top",
+            "move_up": "Move up",
+            "move_down": "Move down",
+            "remove_block": "Remove from layout",
+            "add_to_main": "Add to main column",
+            "add_to_side": "Add to side column",
+            "available_widgets": "Available widgets",
+            "reset": "Reset layout",
+            "feature_disabled": "This section is turned off for your panel. Remove it from the layout or ask an administrator to enable it.",
+            "block_labels": {
+                "hero": "Welcome banner",
+                "announcements": "Announcements",
+                "recent_mails": "Recent mail",
+                "resources": "Resources",
+                "tickets": "Support tickets",
+                "knowledgebase": "Knowledge base",
+                "profile": "Profile card",
+                "activity": "Recent activity"
+            }
         }
     },
     "account": {
@@ -357,14 +519,72 @@
         "analyticsEnabled": "Allow analytics and external scripts",
         "securitySettings": "Security Settings",
         "securitySettingsDescription": "Manage your account security and authentication methods",
+        "preferences": {
+            "title": "Display Preferences",
+            "description": "Choose how dates and times are displayed across the panel."
+        },
+        "timezone": {
+            "title": "Timezone",
+            "description": "All dates and times shown in the panel will be converted to the timezone you select here. Leave on the default to follow your current device.",
+            "useBrowser": "Auto-detect from this device ({timezone})",
+            "current": "Currently using",
+            "saved": "Timezone updated",
+            "saveFailed": "Failed to update timezone"
+        },
         "sessionManagement": "Session Management",
         "sessionManagementDescription": "Log out of your account on this device",
         "logout": "Logout",
+        "logoutFailed": "Logout failed",
         "discordAccount": "Discord Account",
         "discordAccountDescription": "Link or unlink your Discord account",
         "linkDiscord": "Link Discord",
         "unlinkDiscord": "Unlink Discord",
         "linkedAs": "Linked as",
+        "discordUnlinkedSuccessfully": "Discord account unlinked successfully",
+        "discordUnlinkFailed": "Failed to unlink Discord account",
+        "oidcAccount": "OIDC Account",
+        "oidcAccountDescription": "Link an external single sign-on account to this FeatherPanel account.",
+        "linkOidc": "Link OIDC",
+        "unlinkOidc": "Unlink OIDC",
+        "selectOidcProvider": "Please select an OIDC provider",
+        "oidcLinkedSuccessfully": "OIDC account linked successfully",
+        "oidcUnlinkedSuccessfully": "OIDC account unlinked successfully",
+        "oidcLinkFailed": "Failed to link OIDC account",
+        "oidcAccessDenied": "OIDC access was denied by the provider.",
+        "oidcDiscoveryFailed": "OIDC discovery failed. Please check the provider issuer URL.",
+        "oidcEmailNotVerified": "Your OIDC email address is not verified. Verify your email with the identity provider, then try again.",
+        "oidcInvalidAudience": "The OIDC token audience does not match this FeatherPanel client.",
+        "oidcInvalidIdToken": "The identity provider returned an invalid OIDC ID token.",
+        "oidcInvalidIssuer": "The OIDC token issuer does not match the configured provider.",
+        "oidcInvalidState": "The OIDC login session expired or is invalid. Please try again.",
+        "oidcMissingCode": "The identity provider did not return an authorization code.",
+        "oidcMissingSubject": "The identity provider did not return a user subject identifier.",
+        "oidcNotConfigured": "This OIDC provider is not fully configured.",
+        "oidcProviderMissing": "Please select an OIDC provider.",
+        "oidcProviderNotFound": "The selected OIDC provider is unavailable.",
+        "oidcTokenFailed": "The identity provider rejected the token request. Please check the OIDC client configuration.",
+        "oidcUserNotFound": "No FeatherPanel account matches this OIDC identity.",
+        "oidcUnlinkFailed": "Failed to unlink OIDC account",
+        "ldapAccount": "LDAP Account",
+        "ldapAccountDescription": "Link your directory credentials so this account can sign in with LDAP.",
+        "linkLdap": "Link LDAP",
+        "unlinkLdap": "Unlink LDAP",
+        "ldapUsernamePlaceholder": "LDAP username",
+        "ldapPasswordPlaceholder": "LDAP password",
+        "ldapMissingFields": "Please select a provider and enter your LDAP username and password",
+        "ldapLinkedSuccessfully": "LDAP account linked successfully",
+        "ldapUnlinkedSuccessfully": "LDAP account unlinked successfully",
+        "ldapLinkFailed": "Failed to link LDAP account",
+        "ldapUnlinkFailed": "Failed to unlink LDAP account",
+        "dataRequest": {
+            "title": "Request Your Data",
+            "description": "Create a support ticket asking the host for a copy of the personal data associated with your account.",
+            "ticketSystemDisabledDescription": "Data requests use support tickets, but the ticket system is currently disabled.",
+            "button": "Request Data",
+            "success": "Data request created successfully",
+            "failed": "Failed to create data request",
+            "ticketSystemDisabled": "The ticket system is currently disabled"
+        },
         "sshKeys": {
             "title": "SSH Keys",
             "description": "Manage your SSH keys for secure server access",
@@ -444,21 +664,77 @@
                 "title": "Important Information",
                 "persistent": "API keys are persistent and don't expire",
                 "accessScope": "Keys have full access to your account",
-                "security": "Keep your private keys secure and never share them"
+                "security": "Keep your private keys secure and never share them",
+                "ipRestriction": "You can lock each key to specific IP addresses or CIDR ranges; requests from other IPs are blocked, with optional email alerts when mail is enabled."
+            },
+            "allowedIpsLabel": "Allowed IP addresses",
+            "allowedIpsHelp": "One IPv4/IPv6 address or CIDR per line or comma-separated (e.g. 203.0.113.10 or 10.0.0.0/24). Leave empty to allow any IP.",
+            "allowedIpsPlaceholder": "203.0.113.10\n198.51.100.0/24",
+            "notifyForeignIp": "Email me if this key is used from another IP",
+            "notifyForeignIpHelp": "Sends one email per 30 minutes at most when a request is blocked because the client IP is not allowed. Only works if the panel administrator has enabled outgoing mail (SMTP).",
+            "notifyEnabledHint": "Email notifications are enabled for blocked (non-allowed) IP attempts.",
+            "ipRestrictedLabel": "This key is restricted to specific IP addresses.",
+            "badges": {
+                "ipLocked": "IP restricted"
+            },
+            "oauth2": {
+                "consentButton": "OAuth2 Consent",
+                "prepareLoading": "Preparing authorization request...",
+                "initFailedTitle": "Authorization failed",
+                "initFailedDefault": "Unable to prepare the authorization request.",
+                "noRequestTitle": "OAuth2 API Consent",
+                "noRequestDescription": "Open this page through an authorization URL from a third-party app.",
+                "noRequestWarningTitle": "No authorization request was provided.",
+                "noRequestWarningBody": "Add query parameters like name and callbackurl or start from your app connect button.",
+                "returnToApiKeys": "Return to API Keys",
+                "openPlayground": "Open OAuth2 Playground",
+                "retry": "Retry",
+                "playgroundTitle": "OAuth2 Request Playground",
+                "playgroundDescription": "Build and validate a request from the user side before opening the consent screen.",
+                "authorizeTitle": "Authorize {app}",
+                "authorizeSubtitle": "Requests full account API access",
+                "warning": "Warning: this app will get full access to your account and servers using generated API credentials. Only approve apps you trust.",
+                "requestName": "Request name",
+                "description": "Description",
+                "callbackUrl": "Callback URL",
+                "allowedIps": "Allowed IPs",
+                "allowedIpsAny": "No restriction (any IP)",
+                "foreignIpAlert": "Alert on foreign IP attempts",
+                "enabled": "Enabled",
+                "disabled": "Disabled",
+                "deny": "Deny",
+                "authorize": "Authorize App",
+                "processing": "Processing...",
+                "approveFailed": "Failed to approve the request.",
+                "denyFailed": "Failed to deny the request.",
+                "serverAuthorized": "App authorized and credentials delivered to callback endpoint.",
+                "serverAuthorizedTitle": "Application authorized",
+                "serverAuthorizedDescription": "The app has been authorized successfully. Return to the app to continue.",
+                "serverDenied": "Authorization denied and callback endpoint notified."
             },
             "modalWarning": {},
             "statuses": {
                 "active": "Active"
             },
-            "deleteFailed": "Failed to delete API key"
+            "deleteFailed": "Failed to delete API key",
+            "loadClientsFailed": "Failed to load API clients",
+            "loadClientFailed": "Failed to load API client",
+            "updateClientFailed": "Failed to update API client",
+            "regenerateFailed": "Failed to regenerate API keys"
         },
         "activity": {
             "title": "Activity Log",
             "description": "View your recent account activity",
             "noActivities": "No activities yet",
+            "emptyDescription": "Your recent activity will appear here",
             "loading": "Loading activity...",
+            "loadFailed": "Failed to load activity log",
             "refresh": "Refresh",
-            "searchPlaceholder": "Search activity..."
+            "searchPlaceholder": "Search activity...",
+            "showingActivities": "Showing {from} to {to} of {total} activities",
+            "totalActivities": "{count} activities",
+            "noSearchResults": "No search results",
+            "tryDifferentSearch": "Try a different search term"
         },
         "mail": {
             "title": "Mail List",
@@ -492,7 +768,9 @@
             "enabled": "Enabled",
             "enable": "Enable 2FA",
             "disable": "Disable 2FA",
-            "description": "Add an extra layer of security to your account"
+            "description": "Add an extra layer of security to your account",
+            "disabledSuccessfully": "2FA disabled successfully",
+            "disableFailed": "Failed to disable 2FA"
         }
     },
     "servers": {
@@ -568,6 +846,8 @@
         "liveConnected": "Live",
         "live": "LIVE",
         "removeFromFolder": "Remove from Folder",
+        "favorite_add": "Add to favorites",
+        "favorite_remove": "Remove from favorites",
         "noFolders": "No folders created",
         "sort": {
             "name": "Name",
@@ -607,6 +887,10 @@
                 "info": "Real-time console and stats will be available once connected"
             },
             "kill": "Kill",
+            "kill_confirm_title": "Force Kill Server?",
+            "kill_confirm_description": "This will forcefully terminate the server process immediately, which may cause data corruption or loss. Use 'Stop' for a graceful shutdown instead.",
+            "kill_confirm": "Force Kill",
+            "kill_dont_ask_again": "Don't ask me again",
             "uuid": "UUID",
             "upload_logs": "Upload Logs",
             "info_cards": {
@@ -638,17 +922,22 @@
             },
             "terminal": {
                 "title": "Console",
+                "subtitle": "Live output, command input, and optional filters that match the rest of the panel.",
+                "preset_group_redact": "Hide & redact",
+                "preset_group_highlight": "Highlight",
+                "more_menu": "More actions",
                 "auto_scroll": "Auto-scroll",
                 "history_title": "Command History",
                 "no_history": "No history yet",
                 "scroll_bottom": "Scroll to bottom",
                 "placeholder": "Enter command...",
+                "send": "Send command",
                 "server_running_required": "Server must be running to send commands",
                 "clear": "Clear console",
-                "customize": "Customize console",
+                "customize": "Rules & filters",
                 "popout": "Pop out to window",
-                "add_rule": "Add rule",
-                "no_rules": "No customization rules yet",
+                "add_rule": "Custom regex rule",
+                "no_rules": "No rules yet. Use Quick rules for common redactions, or add a custom regex.",
                 "rule_type_replace": "Replace text",
                 "rule_type_hide": "Hide lines",
                 "rule_type_color": "Highlight with color",
@@ -663,7 +952,64 @@
                 "color_blue": "Blue",
                 "color_magenta": "Magenta",
                 "color_cyan": "Cyan",
-                "color_gray": "Gray"
+                "color_gray": "Gray",
+                "quick_rules": "Quick rules",
+                "quick_rules_help": "One-click presets. You can still edit or disable them below.",
+                "preset_badge": "Quick rule",
+                "preset_active": "Already added",
+                "preset_duplicate": "That quick rule is already enabled.",
+                "copy_selection": "Copy terminal selection",
+                "copied_selection": "Selection copied to clipboard",
+                "nothing_to_copy": "Select text in the console first",
+                "rules_intro": "Rules run on each log line before it is shown. Replace and highlight rules are useful for demos, streams, and tickets.",
+                "input_hint": "Arrow Up/Down for command history. Ctrl+C with an empty field sends SIGINT to the process.",
+                "presets": {
+                    "hide_ipv4": {
+                        "title": "Hide IPv4 addresses",
+                        "desc": "Replaces IPv4 addresses (and optional :port) with [IP] — useful when sharing logs or streaming."
+                    },
+                    "hide_email": {
+                        "title": "Hide email addresses",
+                        "desc": "Replaces email-like tokens with [email]."
+                    },
+                    "hide_steam_id": {
+                        "title": "Hide Steam / FiveM identifiers",
+                        "desc": "Replaces steam:… IDs and SteamID64 values with [id]."
+                    },
+                    "redact_jwt": {
+                        "title": "Redact JWT tokens",
+                        "desc": "Replaces three-part JWT strings with [JWT]."
+                    },
+                    "hide_bearer": {
+                        "title": "Redact Bearer tokens",
+                        "desc": "Replaces HTTP Authorization Bearer values with a placeholder."
+                    },
+                    "hide_discord_webhook": {
+                        "title": "Hide Discord webhook URLs",
+                        "desc": "Replaces full Discord webhook URLs so they are not leaked in logs."
+                    },
+                    "highlight_errors": {
+                        "title": "Highlight errors",
+                        "desc": "Colors words like ERROR, FATAL, Exception, and Traceback in red."
+                    },
+                    "highlight_warnings": {
+                        "title": "Highlight warnings",
+                        "desc": "Colors WARN and similar tokens in yellow."
+                    },
+                    "dim_debug": {
+                        "title": "Dim DEBUG lines",
+                        "desc": "Colors DEBUG / TRACE keywords in gray for quieter reading."
+                    }
+                }
+            },
+            "players": {
+                "title": "Players",
+                "online": "Players Online",
+                "offline": "Server offline",
+                "empty": "No players online",
+                "error": "Unable to load player status",
+                "stale": "Data may be outdated",
+                "names_unavailable": "Player names not available"
             },
             "not_found": {
                 "title": "Server not found",
@@ -770,6 +1116,7 @@
         "failedToSendReply": "Failed to send reply",
         "messageDeleted": "Message deleted",
         "failedToDeleteMessage": "Failed to delete message",
+        "newMessages": "{count} new",
         "deleteMessage": "Delete Message",
         "deleteMessageConfirm": "Are you sure you want to delete this message?",
         "details": "Ticket Details",
@@ -821,18 +1168,48 @@
         }
     },
     "appearance": {
+        "settingsMenuTitle": "Appearance",
+        "settingsMenuSubtitle": "Theme, background, accent, and layout",
+        "fontFamilyTitle": "Font",
         "language": "Language",
+        "navbarHoverReveal": {
+            "title": "Top bar (desktop)",
+            "off": "Always visible",
+            "on": "Reveal on hover",
+            "compactOff": "Visible",
+            "compactOn": "Hover",
+            "onHint": "Large screens: bar stays tucked up until you move the pointer to the top edge, then it drops down."
+        },
+        "navbarSticky": {
+            "title": "Top bar position",
+            "on": "Sticky",
+            "off": "Scroll with page",
+            "onHint": "Keeps the top bar pinned at the top while you scroll.",
+            "offHint": "Top bar scrolls away with the page content."
+        },
+        "chromeLayout": {
+            "title": "Shell layout",
+            "modern": "Floating (modern)",
+            "classic": "Classic",
+            "compactModern": "Floating",
+            "compactClassic": "Classic",
+            "modernHint": "Floating top bar and glass sidebar rail.",
+            "classicHint": "Full-width top bar and traditional sidebar."
+        },
         "accentColor": "Accent Color",
         "theme": {
             "light": "Light Mode",
             "dark": "Dark Mode",
             "switchToLight": "Switch to light mode",
-            "switchToDark": "Switch to dark mode"
+            "switchToDark": "Switch to dark mode",
+            "lockedByAdmin": "Theme is locked by administrator"
         },
         "background": {
             "title": "Background Settings",
             "customize": "Customize background",
             "change": "Change Background",
+            "disabledInLightMode": "Background customization is disabled in light mode",
+            "notAvailableInLight": "Not available in light mode",
             "aurora": "Aurora",
             "auroraDescription": "Animated backgrounds that match your theme colors",
             "variants": {
@@ -885,7 +1262,7 @@
             "pink": "Pink",
             "teal": "Teal",
             "yellow": "Yellow",
-            "white": "White",
+            "indigo": "Indigo",
             "violet": "Violet",
             "cyan": "Cyan",
             "lime": "Lime",
@@ -910,6 +1287,7 @@
             "users": "Users",
             "roles": "Roles",
             "notifications": "Notifications",
+            "announcements": "Announcements",
             "servers": "Servers",
             "virtualServersVds": "Virtual Servers (VDS)",
             "locations_and_nodes": "Locations & Nodes",
@@ -920,6 +1298,7 @@
             "vmInstances": "VM Instances",
             "nodeDatabases": "Node Databases",
             "nodeStatus": "Node Status",
+            "mounts": "Mounts",
             "subdomains": "Subdomains",
             "realms": "Realms (Nests)",
             "spells": "Spells (Eggs)",
@@ -935,8 +1314,11 @@
             "translations": "Translations",
             "aiAgent": "AI Agent",
             "oidcProviders": "OIDC / SSO Providers",
+            "ldapProviders": "LDAP Providers",
             "rateLimits": "Rate Limits",
+            "blockedEmailDomains": "Blocked Email Domains",
             "databaseManagement": "Database Management",
+            "storageSense": "Storage Sense",
             "pterodactylImporter": "Pterodactyl Importer",
             "apiKeys": "API Keys",
             "plugins": "Plugins",
@@ -945,13 +1327,20 @@
             "marketplace": "Marketplace",
             "cloudManagement": "Cloud Management",
             "knowledgebase": "Knowledge Base",
+            "knowledgebase_categories": "Categories",
+            "knowledgebase_articles": "Articles",
+            "knowledgebase_order": "Reorder Articles",
+            "analytics_overview": "Overview",
+            "language_analytics": "Languages",
             "tickets": "Support Tickets",
             "ticketCategories": "Ticket Categories",
             "ticketPriorities": "Ticket Priorities",
             "ticketStatuses": "Ticket Statuses",
             "files": "Files",
+            "trash": "Trash",
             "databases": "Databases",
             "schedules": "Schedules",
+            "lifecycleHooks": "Lifecycle Hooks",
             "backups": "Backups",
             "allocations": "Allocations",
             "firewall": "Firewall",
@@ -963,17 +1352,143 @@
             "account": "Account",
             "status": "Status",
             "admin": "Admin",
+            "updates": "System Updates",
             "ticketConfigs": "Ticket Configs"
         }
     },
+    "admin_updates": {
+        "title": "System Updates",
+        "description": "Manage and apply updates for your panel, wings nodes, and plugins.",
+        "panel": {
+            "title": "FeatherPanel",
+            "current": "Current Version",
+            "latest": "Latest Version",
+            "up_to_date": "Panel is up to date",
+            "update_available": "Update Available",
+            "update_now": "Update Panel Now",
+            "updating": "Updating...",
+            "last_checked": "Last checked: {date}",
+            "docker_only": "Panel updates are only available for Docker installations via the UI.",
+            "version_label": "Version",
+            "runtime_label": "Runtime",
+            "integrity_label": "Integrity",
+            "integrity_verified": "Verified",
+            "release_stable": "Stable",
+            "system_update_available": "System Update Available",
+            "update_panel_now": "Update panel now",
+            "running_latest": "Running Latest Build"
+        },
+        "wings": {
+            "title": "Wings Nodes",
+            "description": "Monitor and update Wings daemon across your infrastructure.",
+            "node": "Node",
+            "version": "Version",
+            "status": "Status",
+            "action": "Action",
+            "up_to_date": "Up to date",
+            "update_available": "Update available",
+            "update_all": "Update All Nodes",
+            "update_node": "Update Node",
+            "checking": "Checking...",
+            "failed": "Failed to check",
+            "no_nodes": "No nodes found.",
+            "no_nodes_search": "No nodes matching your search"
+        },
+        "plugins": {
+            "title": "Plugins",
+            "plugin": "Plugin",
+            "current": "Installed",
+            "latest": "Latest",
+            "update": "Update",
+            "up_to_date": "All plugins are up to date",
+            "no_plugins": "No plugins installed.",
+            "update_available_badge": "Update available"
+        },
+        "bulk": {
+            "items_selected": "{count} items selected",
+            "ready": "Bulk update ready",
+            "update_selected": "Update selected"
+        },
+        "integrity": {
+            "title": "System Integrity & Infrastructure Health",
+            "description": "Regularly updating your infrastructure ensures security, performance, and stability. FeatherPanel automates version checking for all your Wings nodes and marketplace plugins.",
+            "note": "Updates are non-destructive and preserve all your configurations.",
+            "view_docs": "View Documentation"
+        },
+        "messages": {
+            "update_started": "Update process started successfully.",
+            "update_failed": "Failed to start update.",
+            "checking_updates": "Checking for updates...",
+            "bulk_starting": "Starting bulk updates...",
+            "bulk_started": "Bulk update process initiated!",
+            "bulk_failed": "Some updates failed to start."
+        }
+    },
+    "sidebar": {
+        "close": "Close sidebar",
+        "server_switcher": {
+            "title": "Switch server",
+            "switch": "Switch server",
+            "current": "Current server",
+            "loading": "Loading servers…",
+            "view_all": "View all servers"
+        }
+    },
     "navbar": {
+        "server_switcher": {
+            "title": "Switch server",
+            "switch": "Switch server",
+            "current": "Current server",
+            "loading": "Loading servers…",
+            "empty": "No servers found",
+            "empty_favorites": "No favorite servers yet. Star a server in the list to pin it here.",
+            "empty_recent": "No recently viewed servers yet.",
+            "empty_search": "No servers match your search.",
+            "search_placeholder": "Search servers…",
+            "clear_search": "Clear search",
+            "tabs_label": "Server list filters",
+            "tabs": {
+                "all": "All",
+                "favorites": "Favorites",
+                "recent": "Recent"
+            },
+            "view_all": "View all servers"
+        },
         "profile": "Your Profile",
         "adminArea": "Admin Area",
         "adminPanelTooltip": "Admin Panel",
         "openSidebar": "Open sidebar",
+        "toggleSidebar": "Toggle sidebar width",
+        "collapseSidebar": "Collapse",
+        "expandSidebar": "Expand",
         "openUserMenu": "Open user menu",
         "signOut": "Sign out",
-        "user": "User"
+        "user": "User",
+        "noRole": "No role assigned",
+        "menuAccount": "Your account",
+        "copyEmail": "Copy email",
+        "showEmail": "Show email",
+        "hideEmail": "Hide email",
+        "poweredBy": "powered by featherpanel",
+        "localStorageMenu": "Browser storage",
+        "localStorageDefaultAppName": "Hosting panel",
+        "localStorageTitle": "{appName} browser storage",
+        "localStorageDesc": "Values your browser keeps for {appName} (layouts, themes, sidebar, and similar). Use this to inspect, copy, remove one key, or clear everything listed. Other browser data may still exist outside this list.",
+        "localStorageFootnote": "Translation caches and the public app settings cache are not shown here on purpose (large or refetched automatically).",
+        "localStorageSearch": "Search keys or values…",
+        "localStorageEmpty": "No matching keys.",
+        "localStorageRefresh": "Reload list",
+        "localStorageSummary": "{keys} keys · ~{chars} characters",
+        "localStorageChars": "{n} characters",
+        "localStorageCopy": "Copy value",
+        "localStorageDelete": "Remove key",
+        "localStorageExpand": "Show full value",
+        "localStorageCollapse": "Collapse value",
+        "localStorageClearAll": "Clear all listed keys",
+        "localStorageDeleted": "Removed “{key}”.",
+        "localStorageClearedCount": "Removed {count} keys.",
+        "localStorageConfirmClearTitle": "Clear all keys listed for {appName}?",
+        "localStorageConfirmClearDesc": "This deletes every key you see in this list for this site only. You stay signed in, but UI preferences may reset. This cannot be undone."
     },
     "features": {
         "eula": {
@@ -1145,7 +1660,7 @@
         "rowsReturned": "{count} row(s) returned",
         "rowsAffected": "{count} row(s) affected",
         "truncatedTo": "(truncated to {limit})",
-        "queryExecuted": "Query executed — {count} row(s) affected"
+        "queryExecuted": "Query executed {count} row(s) affected"
     },
     "serverBackups": {
         "title": "Backups",
@@ -1155,6 +1670,8 @@
         "refresh": "Refresh",
         "backupLimitReached": "Backup limit reached",
         "backupLimitReachedDescription": "You have reached the maximum number of backups for this server (limit: {limit}). Please delete some backups to create a new one.",
+        "fifoRollingTitle": "FIFO rolling backups enabled",
+        "fifoRollingDescription": "When you reach the backup limit ({limit}), the panel removes the oldest unlocked backup before creating a new one. Pair this with a schedule (for example every 24 hours) to keep a rolling window of about {limit} recent backups.",
         "createBackup": "Create Backup",
         "createBackupDescription": "Create a new backup of your server data.",
         "name": "Backup Name",
@@ -1181,6 +1698,13 @@
         "createSuccess": "Backup created successfully",
         "restoreFailed": "Failed to restore backup",
         "restoreSuccess": "Backup restoration initiated successfully",
+        "startSuccess": "Backup started. This may take a few minutes.",
+        "startFailed": "Failed to start backup",
+        "deleteSuccessShort": "Backup deleted",
+        "restoreStarted": "Restore started. This may take several minutes.",
+        "restoreStartFailed": "Failed to start restore",
+        "restoreTakingLong": "Restore is taking longer than expected. Please check manually.",
+        "restoreCompleted": "Restore completed successfully!",
         "downloadFailed": "Failed to get download URL",
         "downloadSuccess": "Download URL generated successfully",
         "deleteFailed": "Failed to delete backup",
@@ -1416,7 +1940,9 @@
         "loadFailed": "Failed to load subdomains.",
         "configuration": "Configuration",
         "helpfulTips": "Helpful Tips",
-        "guide": "Guide"
+        "guide": "Guide",
+        "guide_custom_address": "Subdomains allow you to give your server a custom address, like",
+        "guide_multiple": "You can create multiple subdomains for different purposes."
     },
     "serverSchedules": {
         "title": "Schedules",
@@ -1438,6 +1964,8 @@
         "dayOfMonth": "Day (Month)",
         "month": "Month",
         "dayOfWeek": "Day (Week)",
+        "timezone": "Timezone",
+        "timezoneHelp": "The timezone the cron expression above is interpreted in. For example, '0 3 * * *' with 'Europe/Paris' means 3 AM Paris time, not 3 AM UTC.",
         "onlyWhenOnline": "Only When Online",
         "onlyWhenOnlineHelp": "Should this schedule only run when the server is online?",
         "scheduleEnabled": "Schedule Enabled",
@@ -1452,6 +1980,8 @@
         "createFailed": "Failed to create schedule.",
         "updateSuccess": "Schedule updated successfully.",
         "updateFailed": "Failed to update schedule.",
+        "loadFailed": "Failed to load schedule.",
+        "nameRequired": "Schedule name is required.",
         "deleteSuccess": "Schedule deleted successfully.",
         "deleteFailed": "Failed to delete schedule.",
         "toggleSuccess": "Schedule status updated.",
@@ -1464,7 +1994,7 @@
         "featureDisabledDescription": "The schedules feature has been disabled by the administrator. Please contact support if you need to automate server tasks.",
         "disabled": "Schedule is disabled",
         "runNow": "Run Now",
-        "runQueued": "Schedule queued — it will run on the next cron tick",
+        "runQueued": "Schedule queued it will run on the next cron tick",
         "runFailed": "Failed to run schedule",
         "export": "Export",
         "exportSuccess": "Schedule exported",
@@ -1480,7 +2010,11 @@
         "clickToUploadJson": "Click to upload a .json file",
         "orPasteJson": "or paste JSON",
         "nextRun": "Next:",
-        "showing": "Showing {from}–{to} of {total}"
+        "showing": "Showing {from}–{to} of {total}",
+        "options": "Options",
+        "configuration": "Configuration",
+        "runRegardless": "No - Run regardless of server status",
+        "runOnlyOnline": "Yes - Only run when server is online"
     },
     "serverTasks": {
         "title": "Schedule Tasks",
@@ -1986,7 +2520,137 @@
         "serverDeleted": "Server deleted successfully",
         "deleteError": "Failed to delete server",
         "accessDenied": "Access Denied",
-        "errorTitle": "Error"
+        "errorTitle": "Error",
+        "backupPolicyTitle": "Backup policy",
+        "backupPolicyDescription": "Adjust how backups behave when the limit is reached (hard stop vs FIFO rotation). The maximum number of backups is set by your host. Your host may allow or disallow owner changes here.",
+        "backupLimitReadOnlyLabel": "Maximum backups (host limit)",
+        "backupLimitReadOnlyHelp": "This value is set by an administrator and cannot be changed here.",
+        "backupPolicySave": "Save backup policy",
+        "backupPolicySaveSuccess": "Backup policy updated",
+        "backupPolicySaveError": "Failed to update backup policy",
+        "backupPolicyDisabled": "Backup policy changes are disabled by the administrator."
+    },
+    "lifecycleHooks": {
+        "title": "Lifecycle Hooks",
+        "description": "Configure pre-start and pre-stop pipelines that run before power actions.",
+        "export": "Export",
+        "import": "Import",
+        "addStep": "Add Step",
+        "manage": "Manage",
+        "selected": "Selected",
+        "configuredSteps": "{count} configured steps",
+        "currentlyManaging": "Currently managing: {hookType}",
+        "continueOnFailure": "Continue on failure",
+        "payloadUnavailable": "Payload unavailable",
+        "noSteps": "No lifecycle steps",
+        "noStepsDescription": "Add your first step to this hook pipeline.",
+        "noStepsReadOnly": "No steps are configured for this hook, or changes are disabled until the feature is enabled.",
+        "featureDisabledTitle": "Lifecycle hooks are disabled",
+        "featureDisabledBody": "Lifecycle hooks are off for this panel. An administrator can turn them on under Admin → Settings → Servers (Lifecycle Hooks Enabled), listed next to cron schedules. While off, the server sidebar entry is hidden, pipelines do not run on power actions, and you cannot add, edit, reorder, or delete steps.",
+        "backToHooks": "Back to lifecycle hooks",
+        "stepNew": {
+            "title": "Add {hookType} step",
+            "description": "Configure one action to run in this hook pipeline before the server power action.",
+            "formSectionTitle": "Step configuration",
+            "formSectionDescription": "Choose a task type and fill in the details. Validation runs when you save."
+        },
+        "stepEdit": {
+            "title": "Edit {hookType} step",
+            "description": "Update this step. Changes apply on the next power action that uses this hook.",
+            "formSectionTitle": "Step configuration",
+            "formSectionDescription": "Adjust task type, payload, and failure behavior as needed.",
+            "notFoundTitle": "Step not found",
+            "notFoundDescription": "This step may have been removed or the link is invalid."
+        },
+        "createModalTitle": "Add {hookType} Step",
+        "createModalDescription": "Configure one lifecycle action step.",
+        "editModalTitle": "Edit {hookType} Step",
+        "editModalDescription": "Update the lifecycle step details.",
+        "deleteModalTitle": "Delete lifecycle step",
+        "deleteModalDescription": "This action cannot be undone.",
+        "hookTypes": {
+            "preStart": "Pre-start Hook",
+            "preStop": "Pre-stop Hook"
+        },
+        "taskTypes": {
+            "containerCommand": "Container Command",
+            "discordWebhook": "Discord Webhook",
+            "httpRequest": "HTTP Request"
+        },
+        "discord": {
+            "embedBuilder": "Embed builder",
+            "livePreview": "Live preview",
+            "previewTitle": "Preview",
+            "previewEmpty": "Add message content or fill in embed fields shown here as plain text.",
+            "addEmbed": "Add embed",
+            "removeEmbed": "Remove embed",
+            "embedNumber": "Embed {n}",
+            "embedTitle": "Embed title",
+            "embedUrl": "Title URL",
+            "embedDescription": "Description",
+            "embedColor": "Accent color",
+            "includeTimestamp": "Include timestamp (saved as UTC)",
+            "mediaAndFooter": "Media, footer & author",
+            "thumbnailUrl": "Thumbnail URL",
+            "imageUrl": "Image URL",
+            "footerText": "Footer text",
+            "footerIconUrl": "Footer icon URL",
+            "author": "Author",
+            "fields": "Fields",
+            "addField": "Add field",
+            "fieldsHint": "Fields appear in rows; use \"inline\" for side-by-side on desktop.",
+            "inline": "Inline",
+            "contentHint": "Use plain text and/or embeds below. Embed image/author/footer icon URLs must be HTTPS (validated server-side).",
+            "urlHidden": "Hidden for security",
+            "contentEmpty": "No plain message content",
+            "placeholders": {
+                "title": "Optional title",
+                "description": "Supports Markdown in Discord.",
+                "authorName": "Author name",
+                "authorIcon": "Icon URL",
+                "fieldName": "Field name",
+                "fieldValue": "Field value",
+                "messageContent": "Short message shown above embeds..."
+            }
+        },
+        "form": {
+            "taskType": "Task Type",
+            "command": "Command",
+            "webhookUrl": "Webhook URL",
+            "content": "Content",
+            "usernameOptional": "Username (optional)",
+            "url": "URL",
+            "method": "Method",
+            "headersJson": "Headers (JSON object)",
+            "queryParamsJson": "Query Params (JSON object)",
+            "bodyOptional": "Body (optional)",
+            "failureBehavior": "Failure behavior",
+            "stopOnFailure": "Stop pipeline on failure",
+            "continueOnFailure": "Continue pipeline on failure",
+            "saveStep": "Save Step"
+        },
+        "messages": {
+            "noPermission": "You do not have permission to view lifecycle hooks.",
+            "fetchFailed": "Failed to fetch lifecycle hooks",
+            "importSuccess": "Lifecycle hooks imported successfully",
+            "importFailed": "Failed to import lifecycle hooks",
+            "importInvalid": "Invalid lifecycle hook import file",
+            "commandRequired": "Command is required",
+            "webhookUrlRequired": "Webhook URL is required",
+            "urlRequired": "URL is required",
+            "invalidJson": "Headers and query params must be valid JSON objects",
+            "discordNeedsContentOrEmbed": "Provide message content or at least one non-empty embed.",
+            "hookEnabled": "Lifecycle hook enabled",
+            "hookDisabled": "Lifecycle hook disabled",
+            "updateHookFailed": "Failed to update hook status",
+            "stepCreated": "Lifecycle step created",
+            "stepCreateFailed": "Failed to create lifecycle step",
+            "stepUpdated": "Lifecycle step updated",
+            "stepUpdateFailed": "Failed to update lifecycle step",
+            "stepDeleted": "Lifecycle step deleted",
+            "stepDeleteFailed": "Failed to delete lifecycle step",
+            "reorderFailed": "Failed to reorder lifecycle step"
+        }
     },
     "files": {
         "title": "File Manager",
@@ -2013,23 +2677,101 @@
             "upload_files": "Upload files",
             "upload_folders": "Upload folder(s)",
             "ignored_content": "Ignored Content",
-            "wipe_all": "Wipe All"
+            "wipe_all": "Wipe All",
+            "trash": "Trash"
         },
         "list": {
             "header_name": "Name",
             "header_size": "Size",
             "header_modified": "Last Modified",
+            "header_actions": "Actions",
             "empty": {},
             "empty_description": "This directory is empty.",
             "empty_title": "No Files Found"
         },
+        "trash": {
+            "title": "Trash",
+            "subtitle": "Restore or permanently remove deleted files from your server.",
+            "description": "{count} item(s) using {size} in trash",
+            "disabled": "The file trash bin is disabled by your administrator.",
+            "back_to_files": "Back to file manager",
+            "loading": "Loading trash...",
+            "empty_title": "Trash is empty",
+            "empty": "Deleted files from the file manager will appear here until restored or purged.",
+            "restore": "Restore",
+            "delete_permanent": "Delete permanently",
+            "empty_all": "Empty trash",
+            "stats": {
+                "items": "Items",
+                "size": "Total size",
+                "selected": "Selected"
+            },
+            "list": {
+                "header_name": "Name",
+                "header_size": "Size",
+                "header_deleted": "Deleted"
+            },
+            "empty_dialog": {
+                "title": "Empty trash",
+                "description": "Permanently delete every item in trash. This cannot be undone.",
+                "cancel": "Cancel",
+                "confirm": "Empty trash",
+                "confirming": "Emptying..."
+            },
+            "restore_dialog": {
+                "title": "Restore from trash",
+                "description": "Restore {count} selected item(s) to their original location.",
+                "overwrite_label": "Replace existing files",
+                "overwrite_hint": "If the server recreated a file with the same name (for example banned-players.json), enable this to replace it with the trashed copy.",
+                "cancel": "Cancel",
+                "confirm": "Restore",
+                "confirming": "Restoring..."
+            },
+            "messages": {
+                "load_error": "Failed to load trash",
+                "restored": "Restored from trash",
+                "restore_error": "Failed to restore files",
+                "deleted": "Permanently deleted from trash",
+                "delete_error": "Failed to delete trash items",
+                "emptied": "Trash emptied",
+                "empty_error": "Failed to empty trash"
+            }
+        },
+        "archive_browser": {
+            "title": "Browse archive",
+            "loading": "Loading...",
+            "empty": "This folder is empty.",
+            "error": "Could not read this archive. It may be unsupported, corrupted, or too large.",
+            "truncated": "Listing was truncated. Extract the archive to see everything.",
+            "up": "Up",
+            "close": "Close",
+            "drag_hint": "Drag files or folders onto a directory in the file manager to extract them there, or onto a breadcrumb to choose a parent path. Folders use the grip on the right.",
+            "drag_handle": "Drag to extract this item",
+            "extract_here": "Extract here",
+            "extract_root": "Extract to root",
+            "extract_full": "Extract entire archive here",
+            "extract_full_loading": "Extracting archive..."
+        },
         "messages": {
             "active_pull": "Active Pull",
             "task_id": "Task ID: {id}",
+            "load_error": "Failed to load files",
+            "wings_connection_unavailable": "Wings Connection Unavailable. Please contact the support team.",
+            "contact_support": "If this problem persists, please contact the support team.",
             "failed_download": "Failed to initiate download",
+            "request_timed_out": "Request timed out",
+            "load_timeout_retry": "File loading timed out. Please try again.",
+            "download_cancelled": "Download cancelled",
+            "cancel_download_failed": "Failed to cancel download",
+            "moved_to_trash": "Moved to trash",
+            "deleted": "Deleted successfully",
+            "delete_failed": "Failed to delete files",
             "extracting": "Extracting archive...",
             "extracted": "Archive extracted",
             "extract_failed": "Failed to extract archive",
+            "archive_members_extracting": "Extracting from archive...",
+            "archive_members_extracted": "Extracted into folder",
+            "archive_members_extract_failed": "Could not extract from archive",
             "uploading": "Uploading {file}...",
             "upload_complete": "Upload complete",
             "upload_failed": "Upload failed",
@@ -2039,7 +2781,11 @@
             "upload_folder_error": "Folder upload failed",
             "uploading_files_progress": "Uploading {current} of {total} files",
             "drop_to_upload": "Drop to Upload",
-            "drop_description": "Release your files to start uploading to"
+            "drop_description": "Release your files to start uploading to",
+            "moving": "Moving {count} item(s)...",
+            "moved": "Moved {count} item(s)",
+            "move_error": "Failed to move files",
+            "move_into_self_error": "Cannot move a folder into itself"
         },
         "editor": {
             "title": "Editing: {file}",
@@ -2057,16 +2803,51 @@
             "loading_title": "Loading File...",
             "load_timeout": "File loading timed out. The file may be too large or the server is taking too long to respond.",
             "unsaved_prompt": "You have unsaved changes in this file. Are you sure you want to leave without saving?",
-            "window_title": "File Editor"
+            "window_title": "File Editor",
+            "binary_not_supported": "This file type cannot be opened in the text editor. Download it from the file manager instead."
         },
         "search": {
             "files_placeholder": "Filter files in this folder...",
             "contents_placeholder": "Search text in files...",
             "search": "Search",
             "stop": "Stop",
+            "search_failed": "Failed to search files",
             "no_results": "No matches found in this folder",
             "results_title": "Search results",
-            "result_item": "{count} matches in {file}"
+            "result_item": "{count} matches in {file}",
+            "advanced": {
+                "title": "Search Files",
+                "subtitle": "Use advanced filters to narrow results quickly.",
+                "show_filters": "Advanced Filters",
+                "hide_filters": "Hide Advanced Filters",
+                "apply_filters": "Apply Filters",
+                "reset_filters": "Reset",
+                "active_count": "{count} active",
+                "searching": "Searching files...",
+                "filters_applied": "Advanced filters are active.",
+                "path_patterns": "Path Patterns",
+                "include_label": "Include Path Patterns",
+                "include_placeholder": "Include (e.g., *.js, src/**)",
+                "include_help": "Only files matching these glob patterns are included. Separate multiple patterns with commas.",
+                "exclude_label": "Exclude Path Patterns",
+                "exclude_placeholder": "Exclude (e.g., node_modules/**)",
+                "exclude_help": "Files matching these patterns are removed from results.",
+                "case_insensitive": "Case insensitive",
+                "file_content": "File Content",
+                "search_text_label": "Search File Content",
+                "search_text_placeholder": "Search text",
+                "search_text_help": "Find text inside file contents. Supports plain text search.",
+                "max_file_size_label": "Max File Size for Content Scan",
+                "max_file_size": "Max file size (MiB)",
+                "max_file_size_help": "Files larger than this limit are skipped for content matching.",
+                "include_oversized": "Include oversized files",
+                "content_case_insensitive": "Content case insensitive",
+                "file_size_label": "File Size Range",
+                "file_size": "File Size (Bytes)",
+                "file_size_help": "Filter files by byte size. Leave empty for no limit.",
+                "minimum_placeholder": "Minimum",
+                "maximum_placeholder": "Maximum"
+            }
         },
         "editors": {
             "minecraftProperties": {
@@ -2231,6 +3012,154 @@
                     "maxWorldSize": {
                         "label": "Max World Size",
                         "description": "Maximum world size in blocks"
+                    },
+                    "serverName": {
+                        "label": "Server Name",
+                        "description": "Internal server name used for logging"
+                    },
+                    "serverIp": {
+                        "label": "Server IP",
+                        "description": "Bind address (leave empty for all interfaces)"
+                    },
+                    "serverPort": {
+                        "label": "Server Port",
+                        "description": "Port the Minecraft server listens on"
+                    },
+                    "networkCompressionThreshold": {
+                        "label": "Network Compression Threshold",
+                        "description": "Packet size threshold for compression (-1 to disable)"
+                    },
+                    "rateLimit": {
+                        "label": "Rate Limit",
+                        "description": "Maximum packets per second (0 to disable)"
+                    },
+                    "playerIdleTimeout": {
+                        "label": "Player Idle Timeout",
+                        "description": "Minutes before idle players are kicked (0 to disable)"
+                    },
+                    "pauseWhenEmptySeconds": {
+                        "label": "Pause When Empty (seconds)",
+                        "description": "Seconds after last player leaves before pausing (-1 to disable)"
+                    },
+                    "enableStatus": {
+                        "label": "Enable Status",
+                        "description": "Respond to server list ping requests"
+                    },
+                    "preventProxyConnections": {
+                        "label": "Prevent Proxy Connections",
+                        "description": "Block players if ISP differs from the one used to join"
+                    },
+                    "logIps": {
+                        "label": "Log IPs",
+                        "description": "Log player IP addresses in the server log"
+                    },
+                    "acceptsTransfers": {
+                        "label": "Accepts Transfers",
+                        "description": "Allow players to transfer to this server from another server"
+                    },
+                    "enableRcon": {
+                        "label": "Enable RCON",
+                        "description": "Enable remote console access"
+                    },
+                    "rconPort": {
+                        "label": "RCON Port",
+                        "description": "Port used for RCON connections"
+                    },
+                    "rconPassword": {
+                        "label": "RCON Password",
+                        "description": "Password required for RCON access"
+                    },
+                    "broadcastRconToOps": {
+                        "label": "Broadcast RCON to OPs",
+                        "description": "Send RCON command output to online operators"
+                    },
+                    "enableQuery": {
+                        "label": "Enable Query",
+                        "description": "Enable GameSpy4 query protocol"
+                    },
+                    "queryPort": {
+                        "label": "Query Port",
+                        "description": "Port used for query protocol responses"
+                    },
+                    "managementServerEnabled": {
+                        "label": "Enable Management Server",
+                        "description": "Enable the built-in management server API"
+                    },
+                    "managementServerHost": {
+                        "label": "Management Server Host",
+                        "description": "Host address for the management server"
+                    },
+                    "managementServerPort": {
+                        "label": "Management Server Port",
+                        "description": "Port for the management server (0 for automatic)"
+                    },
+                    "managementServerSecret": {
+                        "label": "Management Server Secret",
+                        "description": "Shared secret for management server authentication"
+                    },
+                    "managementServerAllowedOrigins": {
+                        "label": "Allowed Origins",
+                        "description": "Comma-separated list of allowed CORS origins"
+                    },
+                    "managementServerTlsEnabled": {
+                        "label": "Management TLS Enabled",
+                        "description": "Use TLS for management server connections"
+                    },
+                    "managementServerTlsKeystore": {
+                        "label": "TLS Keystore Path",
+                        "description": "Path to the TLS keystore file"
+                    },
+                    "managementServerTlsKeystorePassword": {
+                        "label": "TLS Keystore Password",
+                        "description": "Password for the TLS keystore"
+                    },
+                    "initialEnabledPacks": {
+                        "label": "Initial Enabled Packs",
+                        "description": "Comma-separated list of data packs enabled on world creation"
+                    },
+                    "initialDisabledPacks": {
+                        "label": "Initial Disabled Packs",
+                        "description": "Comma-separated list of data packs disabled on world creation"
+                    },
+                    "maxTickTime": {
+                        "label": "Max Tick Time",
+                        "description": "Maximum milliseconds per tick before watchdog stops the server"
+                    },
+                    "statusHeartbeatInterval": {
+                        "label": "Status Heartbeat Interval",
+                        "description": "Interval in seconds for status heartbeats (0 to disable)"
+                    },
+                    "regionFileCompression": {
+                        "label": "Region File Compression",
+                        "description": "Compression algorithm used for region files"
+                    },
+                    "syncChunkWrites": {
+                        "label": "Sync Chunk Writes",
+                        "description": "Synchronously write chunk data to disk"
+                    },
+                    "debug": {
+                        "label": "Debug Mode",
+                        "description": "Enable debug logging"
+                    },
+                    "enableJmxMonitoring": {
+                        "label": "Enable JMX Monitoring",
+                        "description": "Expose JMX monitoring beans"
+                    },
+                    "enableCodeOfConduct": {
+                        "label": "Enable Code of Conduct",
+                        "description": "Enable the Minecraft code of conduct system"
+                    },
+                    "bugReportLink": {
+                        "label": "Bug Report Link",
+                        "description": "URL shown to players for reporting bugs"
+                    },
+                    "textFilteringConfig": {
+                        "label": "Text Filtering Config",
+                        "description": "Path or configuration for chat text filtering"
+                    },
+                    "textFilteringVersion": {
+                        "label": "Text Filtering Version",
+                        "description": "Text filtering configuration version"
                     }
                 },
                 "sections": {
@@ -2240,7 +3169,10 @@
                     "network": "Network & Security",
                     "performance": "Performance Settings",
                     "resourcePack": "Resource Pack",
-                    "advanced": "Advanced Settings"
+                    "advanced": "Advanced Settings",
+                    "dataPacks": "Data Packs",
+                    "rconQuery": "RCON & Query",
+                    "managementServer": "Management Server"
                 },
                 "sectionsDescriptions": {
                     "serverInfo": "Basic server configuration",
@@ -2249,7 +3181,10 @@
                     "network": "Network and security settings",
                     "performance": "Server performance and rendering settings",
                     "resourcePack": "Resource pack configuration",
-                    "advanced": "Advanced server configuration"
+                    "advanced": "Advanced server configuration",
+                    "dataPacks": "Initial data pack configuration",
+                    "rconQuery": "Remote console and query protocol settings",
+                    "managementServer": "Built-in management API settings"
                 },
                 "options": {
                     "gamemode": {
@@ -2270,6 +3205,11 @@
                         "amplified": "Amplified",
                         "largeBiomes": "Large Biomes",
                         "singleBiome": "Single Biome"
+                    },
+                    "regionFileCompression": {
+                        "deflate": "Deflate",
+                        "none": "None",
+                        "lz4": "LZ4"
                     }
                 }
             },
@@ -2649,17 +3589,30 @@
             "preview": "Preview",
             "cant_preview": "Cannot preview this file",
             "folder_label": "Folder",
+            "trash_open": "Open trash",
+            "trash_empty": "Empty trash",
             "edit": "Edit",
             "rename": "Rename",
             "download": "Download",
             "copy": "Copy",
             "move": "Move",
+            "hash": "File Hash",
             "extract": "Extract",
+            "browse_archive": "Browse archive",
             "compress": "Compress",
             "permissions": "Permissions",
             "delete": "Delete"
         },
         "dialogs": {
+            "archive_browse": {
+                "title": "Browse archive",
+                "loading": "Loading…",
+                "empty": "This folder is empty.",
+                "error": "Could not read this archive. It may be unsupported, corrupted, or too large.",
+                "truncated": "Listing was truncated. Extract the archive to see everything.",
+                "up": "Up",
+                "close": "Close"
+            },
             "create_file": {
                 "title": "Create New File",
                 "description": "Create a new file in {root}",
@@ -2683,7 +3636,12 @@
             },
             "delete": {
                 "title": "Delete Files",
+                "title_trash": "Delete files",
                 "description": "Are you sure you want to delete {count} item(s)? This action cannot be undone.",
+                "description_trash": "Move {count} selected item(s) to trash. You can restore them from the Trash page.",
+                "move_to_trash": "Move to trash",
+                "moving_to_trash": "Moving to trash…",
+                "delete_permanent_short": "Delete permanently",
                 "cancel": "Cancel",
                 "delete": "Delete",
                 "deleting": "Deleting..."
@@ -2694,21 +3652,41 @@
                 "rename": "Rename",
                 "renaming": "Renaming..."
             },
+            "hash": {
+                "title": "File Hash",
+                "description": "Calculated hashes for {path}",
+                "calculating": "Calculating hashes...",
+                "copy": "Copy",
+                "copied": "Copied to clipboard",
+                "copy_error": "Failed to copy hash",
+                "error": "Failed to calculate file hash",
+                "close": "Close"
+            },
             "move_copy": {
                 "move_title": "Move Items",
-                "copy_title": "Copy Items",
+                "copy_title": "Duplicate Items",
                 "move_description": "Move {count} item(s) to a new location.",
-                "copy_description": "Copy {count} item(s) to a new location.",
+                "copy_description": "Duplicate {count} item(s) in the current folder.",
                 "destination_label": "Destination Path",
+                "destination_current": "Current Folder",
+                "destination_parent": "Parent Folder",
+                "destination_root": "Root Folder",
+                "destination_selected": "Selected destination: {path}",
+                "path_quick_pick": "Path Quick Pick",
+                "show_advanced": "Advanced Path",
+                "hide_advanced": "Hide Advanced",
+                "new_name_label": "New Name",
+                "new_name_placeholder": "Leave empty for {name}",
+                "new_name_multi_hint": "Multiple items selected. Each item will be duplicated automatically using the \"- copy\" naming format.",
                 "cancel": "Cancel",
                 "move": "Move",
-                "copy": "Copy",
+                "copy": "Duplicate",
                 "moving": "Moving files...",
-                "copying": "Copying files...",
+                "copying": "Duplicating files...",
                 "move_success": "Move completed",
-                "copy_success": "Copy completed",
+                "copy_success": "Duplicate completed",
                 "move_error": "Failed to move files",
-                "copy_error": "Failed to copy files"
+                "copy_error": "Failed to duplicate files"
             },
             "compress": {
                 "title": "Compress Files",
@@ -2781,6 +3759,37 @@
     },
     "admin": {
         "navbar": {},
+        "moderation": {
+            "reason_category_label": "Reason category",
+            "reason_category_placeholder": "Select a category (optional)",
+            "reason_details_label": "Details for staff",
+            "reason_details_placeholder": "Describe why this action was taken. Visible to staff only.",
+            "reason_details_help": "Provide a category, at least 3 characters of detail, or both. This helps other staff understand the decision.",
+            "reason_required": "A reason is required when suspending or banning.",
+            "status_reason": "Reason",
+            "status_by": "Actioned by",
+            "status_at": "Actioned at",
+            "no_reason_recorded": "No reason recorded",
+            "unknown_staff": "Unknown staff member",
+            "unknown_time": "Unknown time",
+            "user_banned_title": "Account ban active",
+            "user_not_banned": "This account is not banned.",
+            "server_suspended_title": "Server suspension active",
+            "server_not_suspended": "This server is not suspended.",
+            "vds_suspended_title": "VDS suspension active",
+            "vds_not_suspended": "This VDS instance is not suspended.",
+            "categories": {
+                "payment_overdue": "Payment overdue",
+                "terms_violation": "Terms of service violation",
+                "abuse_harassment": "Abuse or harassment",
+                "resource_abuse": "Resource abuse",
+                "security_threat": "Security threat",
+                "spam": "Spam or advertising",
+                "chargeback": "Chargeback or fraud",
+                "manual_review": "Manual review required",
+                "other": "Other"
+            }
+        },
         "affiliates": {
             "title": "Recommended Partners",
             "description": "Affiliate hosting partners for game and VDS infrastructure.",
@@ -2819,11 +3828,11 @@
         },
         "logs": {
             "title": "Logs",
-            "description": "View application, web, and mail logs",
+            "description": "View application and web server logs, plus async runner output",
             "log_type": "Log Type:",
             "log_type_app": "App Logs",
             "log_type_web": "Web Logs",
-            "log_type_mail": "Mail Logs",
+            "log_type_runner": "Runner Logs",
             "lines": "Lines:",
             "logs_output": "Logs Output",
             "lines_count": "lines",
@@ -2831,6 +3840,33 @@
             "no_logs": "No logs available",
             "loading": "Loading logs...",
             "modified": "Modified:",
+            "live": "Live",
+            "filter_placeholder": "Filter lines...",
+            "filter_matches": "{filtered} / {total} matches",
+            "auto_scroll": "Auto-scroll",
+            "copy": "Copy",
+            "copied": "Copied!",
+            "n_lines": "{n} lines",
+            "files_on_disk": "Log files on disk",
+            "active": "active",
+            "tab_panel": "Panel Logs",
+            "tab_wings": "Wings Nodes",
+            "wings_nodes": "Wings nodes",
+            "wings_nodes_hint": "click to switch",
+            "wings_select_node": "Select a node",
+            "wings_loading_nodes": "Loading nodes...",
+            "wings_no_nodes": "No nodes found",
+            "wings_no_node_selected": "Select a Wings node above to view its logs",
+            "wings_fetching": "Fetching from Wings...",
+            "wings_empty": "No Wings logs available — node may be offline or logs are empty",
+            "wings_no_node_status": "No node selected",
+            "wings_auto_refresh_interval": "Auto-refreshing every 30s",
+            "wings_uploaded": "Uploaded:",
+            "wings_upload_logs": "Upload logs",
+            "wings_stop_auto": "Stop auto",
+            "wings_auto_refresh": "Auto refresh",
+            "panel_auto_refresh_interval": "Auto-refreshing every 10s",
+            "filter_no_match": "No lines match your filter.",
             "actions": {
                 "refresh": "Refresh",
                 "auto_refresh": "Auto Refresh",
@@ -2841,7 +3877,98 @@
                 "fetch_failed": "Failed to fetch logs",
                 "fetch_files_failed": "Failed to fetch log files",
                 "cleared": "Logs cleared successfully",
-                "clear_failed": "Failed to clear logs"
+                "clear_failed": "Failed to clear logs",
+                "fetch_nodes_failed": "Failed to fetch nodes",
+                "wings_fetch_failed": "Failed to fetch Wings logs — node may be offline",
+                "wings_upload_failed": "Failed to upload Wings logs",
+                "wings_upload_success": "Wings logs uploaded successfully",
+                "wings_upload_no_url": "Upload succeeded but no URL was returned"
+            }
+        },
+        "storage_sense": {
+            "title": "Storage Sense",
+            "subtitle": "Audit database history tables, preview reclaimable rows, and run safe retention purges.",
+            "warning": "This permanently deletes rows. Take a database backup first. Wings backups and server files are not touched only panel MySQL data you select.",
+            "retention_label": "Retention period (days)",
+            "retention_hint": "Rows older than this age are counted as eligible (7–3650). SSO tokens use expiry time instead.",
+            "retention_presets": "Quick presets",
+            "refresh": "Refresh",
+            "loading": "Loading…",
+            "load_failed": "Failed to load Storage Sense data.",
+            "table": "Table",
+            "rows_total": "Total rows",
+            "rows_purgeable": "Eligible",
+            "approx_size": "Approx. size",
+            "share_of_db": "of tracked tables",
+            "not_installed": "Not installed",
+            "purge": "Purge",
+            "no_edit_permission": "View only: grant Storage Sense manage permission to run purges.",
+            "purge_confirm_title": "Delete old rows?",
+            "purge_confirm_desc": "Permanently remove {count} rows from {label} (older than {days} days).",
+            "purge_confirm_desc_sso": "Permanently remove {count} expired SSO tokens from {label}. Retention days do not apply.",
+            "purge_success": "Removed {count} rows.",
+            "purge_failed": "Purge failed.",
+            "purge_none": "Nothing matched this rule.",
+            "stats_tables": "Tracked tables",
+            "stats_total_rows": "Total rows",
+            "stats_purgeable": "Purgeable rows",
+            "stats_db_bytes": "Tracked data (approx.)",
+            "disk_card_title": "Panel log files",
+            "disk_card_desc": "PHP / app logs under storage/logs. Truncate from the Log viewer when needed.",
+            "open_logs": "Open log viewer",
+            "estimate_note": "Sizes come from MySQL information_schema (data + indexes). Run ANALYZE TABLE occasionally for accuracy.",
+            "search_placeholder": "Filter by name or table…",
+            "select_visible": "Select eligible on page",
+            "clear_selection": "Clear",
+            "batch_purge": "Purge selected",
+            "batch_selected": "{count} selected",
+            "batch_confirm_title": "Purge multiple targets?",
+            "batch_confirm_desc": "Run retention purge on {count} targets for rows older than {days} days. Expired SSO tokens use their own rule.",
+            "batch_success": "Batch complete: {count} rows removed total.",
+            "batch_done_with_skips": "Removed {count} rows. Some targets were unavailable or had nothing to delete.",
+            "copy_summary": "Copy JSON summary",
+            "select": "Select",
+            "tracked_percent": "{percent}% tracked",
+            "eligible_percent": "{percent}% eligible",
+            "retention_na": "Expiry-based",
+            "progress_legend": "Eligible share of table",
+            "categories": {
+                "user_activity": {
+                    "title": "User activity log",
+                    "description": "Account security and action history."
+                },
+                "server_activity": {
+                    "title": "Game server activity",
+                    "description": "Panel-side server events and console-related history."
+                },
+                "vm_instance_activity": {
+                    "title": "VDS / VM activity",
+                    "description": "Virtual instance lifecycle and panel actions."
+                },
+                "vm_panel_logs": {
+                    "title": "VDS provisioning logs",
+                    "description": "VM provisioning and lifecycle log lines stored in the panel DB."
+                },
+                "chatbot_data": {
+                    "title": "AI chatbot data",
+                    "description": "Conversations and messages (messages cascade when a thread is removed)."
+                },
+                "mail_history": {
+                    "title": "Mail queue (sent / failed)",
+                    "description": "Completed mail jobs only pending mail is never deleted."
+                },
+                "admin_notifications": {
+                    "title": "Admin notifications",
+                    "description": "Legacy rows in the global notifications table (dashboard banners)."
+                },
+                "featherzerotrust_logs": {
+                    "title": "FeatherZeroTrust logs",
+                    "description": "Scan batches and per-server results (child rows cascade)."
+                },
+                "sso_expired_tokens": {
+                    "title": "Expired SSO tokens",
+                    "description": "OIDC / SSO flow tokens that are already past expires_at (safe cleanup)."
+                }
             }
         },
         "oidcProviders": {
@@ -2861,6 +3988,9 @@
             "delete": "Delete",
             "cancel": "Cancel",
             "save": "Save",
+            "callbackUrl": "Callback URL",
+            "callbackUrlDescription": "Use this URL when configuring your OIDC provider",
+            "copyCallbackUrl": "Copy Callback URL",
             "form": {
                 "name": "Name",
                 "issuerUrl": "Issuer URL",
@@ -2891,6 +4021,85 @@
                 "toggle_failed": "Failed to toggle provider state"
             },
             "deleteConfirm": "Delete provider \"{name}\"?"
+        },
+        "ldapProviders": {
+            "title": "LDAP Providers",
+            "description": "Configure LDAP/Active Directory authentication providers for direct directory integration",
+            "configuredProviders": "Configured LDAP Providers",
+            "addProvider": "Add LDAP Provider",
+            "loading": "Loading providers…",
+            "noProviders": "No LDAP providers configured. Click \"Add LDAP Provider\" to get started.",
+            "createProvider": "Create LDAP Provider",
+            "editProvider": "Edit LDAP Provider",
+            "enabled": "Enabled",
+            "disabled": "Disabled",
+            "autoProvision": "Auto-Provision",
+            "edit": "Edit",
+            "enable": "Enable",
+            "disable": "Disable",
+            "delete": "Delete",
+            "testConnection": "Test Connection",
+            "cancel": "Cancel",
+            "save": "Save Provider",
+            "baseDn": "Base DN",
+            "protocol": "Protocol",
+            "form": {
+                "basicSettings": "Basic Settings",
+                "providerName": "Provider Name",
+                "providerNamePlaceholder": "Corporate Active Directory",
+                "ldapHost": "LDAP Host",
+                "ldapHostPlaceholder": "ldap.example.com",
+                "port": "Port",
+                "useTls": "Use TLS (STARTTLS)",
+                "useSsl": "Use SSL (LDAPS)",
+                "bindConfiguration": "Bind Configuration",
+                "bindConfigDescription": "Leave empty for anonymous bind. Service account recommended for production.",
+                "bindDn": "Bind DN (Service Account)",
+                "bindDnPlaceholder": "cn=service,dc=example,dc=com",
+                "bindPassword": "Bind Password",
+                "bindPasswordPlaceholder": "Leave empty to keep current password",
+                "userSearchConfiguration": "User Search Configuration",
+                "baseDnLabel": "Base DN",
+                "baseDnPlaceholder": "ou=users,dc=example,dc=com",
+                "userFilter": "User Filter",
+                "userFilterPlaceholder": "(uid={username})",
+                "userFilterHelp": "Use {username} as placeholder. AD example: (sAMAccountName={username})",
+                "attributeMapping": "Attribute Mapping",
+                "usernameAttribute": "Username Attribute",
+                "usernameAttributePlaceholder": "uid",
+                "emailAttribute": "Email Attribute",
+                "emailAttributePlaceholder": "mail",
+                "firstNameAttribute": "First Name Attribute",
+                "firstNameAttributePlaceholder": "givenName",
+                "lastNameAttribute": "Last Name Attribute",
+                "lastNameAttributePlaceholder": "sn",
+                "groupBasedAccess": "Group-Based Access (Optional)",
+                "groupAttribute": "Group Attribute",
+                "groupAttributePlaceholder": "memberOf",
+                "requiredGroup": "Required Group",
+                "requiredGroupPlaceholder": "cn=featherpanel-users,ou=groups,dc=example,dc=com",
+                "requiredGroupHelp": "Only users in this group can log in. Leave empty to allow all users.",
+                "provisioningOptions": "Provisioning Options",
+                "autoProvisionLabel": "Auto-Provision Users",
+                "autoProvisionHelp": "Automatically create user accounts on first LDAP login",
+                "syncAttributesLabel": "Sync Attributes",
+                "syncAttributesHelp": "Update user attributes (email, name) on each login",
+                "generateEmailLabel": "Generate Email if Missing",
+                "generateEmailHelp": "Auto-generate email as username@panel-domain if LDAP doesn't provide one",
+                "enableProviderLabel": "Enable Provider",
+                "enableProviderHelp": "Allow users to authenticate with this LDAP provider"
+            },
+            "messages": {
+                "fetch_failed": "Failed to load LDAP providers",
+                "deleted": "LDAP provider deleted successfully",
+                "delete_failed": "Failed to delete LDAP provider",
+                "saved": "LDAP provider saved successfully",
+                "save_failed": "Failed to save LDAP provider",
+                "toggle_failed": "Failed to toggle provider state",
+                "connection_success": "Connection successful!",
+                "connection_failed": "Connection failed"
+            },
+            "deleteConfirm": "Are you sure you want to delete \"{name}\"?"
         },
         "roles": {
             "title": "Roles & Permissions",
@@ -3058,13 +4267,13 @@
                 "col_actions": "Actions",
                 "create_title": "Add template",
                 "create_desc": "Register a Proxmox template so it appears when creating VMs. The Template VMID is the VMID of the template VM in Proxmox (Datacenter → your node → the template).",
-                "create_desc_select": "Select a VM from Proxmox — name and VMID will be filled. Prefer VMs you have converted to template in Proxmox.",
+                "create_desc_select": "Select a VM from Proxmox name and VMID will be filled. Prefer VMs you have converted to template in Proxmox.",
                 "field_name": "Template name",
                 "field_name_placeholder": "e.g. Ubuntu 22.04",
                 "field_name_help": "Editable; used as the template name in the panel.",
                 "field_name_required": "Template name is required",
                 "field_select_vm": "Select VM from Proxmox",
-                "select_vm_placeholder": "— Select a VM —",
+                "select_vm_placeholder": "Select a VM  ",
                 "select_vm_first": "Select a VM from Proxmox first",
                 "loading_vms": "Loading VMs from Proxmox…",
                 "no_vms": "No VMs found. Create a VM in Proxmox and convert to template (right‑click VM → Convert to template), then try again.",
@@ -3076,6 +4285,8 @@
                 "field_lxc_root_password": "Default LXC root password",
                 "field_lxc_root_password_placeholder": "e.g. P@ssw0rd (shown to users after deploy)",
                 "field_lxc_root_password_help": "Informational only. FeatherPanel does not change the root password on the container; this value is just displayed to users as the default root password for LXC instances created from this template.",
+                "security_recommendation": "Security Recommendation",
+                "lxc_security_warning": "LXC is not recommended for public hosting due to security risks.",
                 "create_success": "Template added successfully.",
                 "create_failed": "Failed to add template.",
                 "delete_success": "Template deleted.",
@@ -3126,6 +4337,12 @@
                 "location_required": "A VPS location is required",
                 "select_location": "Select a VPS location for this node",
                 "select_location_description": "Only locations of type VPS can be used for VDS nodes.",
+                "select_location_sheet_description": "Only locations of type VPS can be used for VDS nodes. Total locations: {total}",
+                "location_picker_existing": "Existing",
+                "location_picker_create": "New location",
+                "create_location_hint": "Creates a VPS location and selects it for this VDS node.",
+                "create_location_submit": "Create and select",
+                "create_location_name_required": "Enter a location name (at least 2 characters).",
                 "storage_auto": "Auto (panel default)",
                 "efi_storage": "EFI Disk Storage",
                 "efi_storage_help": "Proxmox storage used for `efidisk0` when EFI is enabled on VM instances.",
@@ -3175,7 +4392,7 @@
             },
             "advanced": {
                 "headers_title": "Custom Request Headers",
-                "headers_description": "Inject additional HTTP headers into every Proxmox API request — useful for reverse-proxy authentication or custom routing.",
+                "headers_description": "Inject additional HTTP headers into every Proxmox API request useful for reverse-proxy authentication or custom routing.",
                 "params_title": "Custom Query Parameters",
                 "params_description": "Append extra query string parameters to every Proxmox API request.",
                 "no_headers": "No custom headers configured.",
@@ -3198,7 +4415,7 @@
                 "offline": "Offline",
                 "unknown": "Unknown",
                 "test_button": "Test Connection",
-                "success": "Connected — {count} node(s) returned in {ms}ms.",
+                "success": "Connected {count} node(s) returned in {ms}ms.",
                 "failed": "Connection failed.",
                 "token_setup_reminder_title": "Token setup reminder",
                 "token_setup_reminder_description": "Use a Proxmox API token created for the intended account, and verify the permissions match the actions FeatherPanel will perform on this node."
@@ -3302,7 +4519,7 @@
                 "col_notes": "Notes",
                 "col_status": "Status",
                 "primary_badge": "Primary",
-                "primary_proxmox_help": "Proxmox host IP — do not assign to VMs",
+                "primary_proxmox_help": "Proxmox host IP do not assign to VMs",
                 "in_use_badge": "In use",
                 "available": "Available",
                 "cannot_delete_in_use": "Cannot delete: IP is assigned to a VM",
@@ -3312,6 +4529,12 @@
                 "fetch_failed": "Failed to load IP pool.",
                 "add_success": "IP added successfully.",
                 "add_failed": "Failed to add IP.",
+                "single": "Single",
+                "bulk": "Bulk",
+                "bulk_list": "IP list",
+                "bulk_help": "One IP per line, or comma/space separated. CIDR/gateway/notes apply to all.",
+                "bulk_empty": "Add at least one IP (one per line, comma, or space separated).",
+                "bulk_invalid_ip": "Invalid IP in list: {ip}",
                 "update_success": "IP updated successfully.",
                 "update_failed": "Failed to update IP.",
                 "delete_success": "IP deleted successfully.",
@@ -3337,7 +4560,7 @@
                     "what_are_ips": "What is the IP Pool?",
                     "what_are_ips_text": "The IP pool lists all public IP addresses available on this Proxmox node. These IPs can be assigned to virtual machines when provisioning.",
                     "primary_ip": "Primary IP",
-                    "primary_ip_text": "The primary IP is the default outbound address for the node. Only one IP can be marked as primary at a time — click the star icon on any row to change it."
+                    "primary_ip_text": "The primary IP is the default outbound address for the node. Only one IP can be marked as primary at a time click the star icon on any row to change it."
                 }
             },
             "plans": {
@@ -3430,7 +4653,7 @@
                 },
                 "qemu": {
                     "title": "QEMU/KVM Virtual Machines",
-                    "description": "Full hardware virtualisation — runs any OS. Supports CPU passthrough, live migration, snapshots, and nested virtualisation."
+                    "description": "Full hardware virtualisation runs any OS. Supports CPU passthrough, live migration, snapshots, and nested virtualisation."
                 },
                 "lxc": {
                     "title": "LXC Containers",
@@ -3438,7 +4661,7 @@
                 },
                 "templates": {
                     "title": "What are VM Templates?",
-                    "description": "Templates are pre-built VM images (e.g. Ubuntu 22.04, Debian 12) that Proxmox clones when creating a new VM. For QEMU/KVM plans, creating an instance always uses a template — the panel clones that VM and applies the plan's CPU, RAM and disk. LXC can use different flows.",
+                    "description": "Templates are pre-built VM images (e.g. Ubuntu 22.04, Debian 12) that Proxmox clones when creating a new VM. For QEMU/KVM plans, creating an instance always uses a template the panel clones that VM and applies the plan's CPU, RAM and disk. LXC can use different flows.",
                     "how_to_setup": "How to set up templates",
                     "step1": "On your Proxmox host: create a VM, install the OS, clean it (e.g. remove machine-id, cloud-init if needed), then in the Proxmox UI right‑click the VM → Convert to template.",
                     "step2": "In FeatherPanel: go to VM Nodes (VDS Nodes), open the node that runs that Proxmox host, and open the Templates tab. Add a template: give it a name and the Template VMID (the VMID of the template VM in Proxmox). Once registered, that template appears when creating a VM instance from a plan on this node."
@@ -3485,6 +4708,15 @@
             "resize_disk": "Expand disk",
             "disk_size_placeholder": "e.g. +5G or 20G",
             "resize_success": "Disk resized successfully.",
+            "resize_input_required": "Select a disk and enter size (e.g. +5G)",
+            "infrastructure_required_to_continue": "Add at least one VPS location and one VDS node before continuing.",
+            "infrastructure_required": "Infrastructure required",
+            "create_vps_location_first": "Create at least one VPS location first.",
+            "create_vds_node_first": "Create at least one VDS node and link it to a location.",
+            "infrastructure_counts": "{locations} VPS location(s) · {nodes} VDS node(s)",
+            "recheck_infrastructure": "Recheck infrastructure",
+            "create_ip_and_assign": "Create IP and assign",
+            "initiating_creation": "Initiating VM creation…",
             "network_multi_hint": "Add or remove IPs (Proxmox net0, net1, …). Select IP from pool for each interface.",
             "network_multi_qemu_hint": "Add or remove IPs for this VM. FeatherPanel will keep virtual NICs and cloud-init ipconfig entries aligned automatically.",
             "add_ip": "Add IP",
@@ -3492,6 +4724,8 @@
             "secondary_ip": "Secondary",
             "disks_list": "Disks",
             "disk_storage": "Storage",
+            "resize_disk_label": "Disk",
+            "resize_size_label": "Size",
             "disk_size_gb": "Size (GB)",
             "disk_path": "Mount path (optional)",
             "add_disk": "Add disk",
@@ -3531,7 +4765,12 @@
             "backups": {
                 "title": "Backups",
                 "limit_label_create": "Backup limit",
+                "retention_label_create": "Backup retention",
+                "retention_help_create": "Inherit uses the panel default. FIFO rolls the oldest backup when the limit is reached.",
                 "limit_help": "Maximum number of backups allowed for this instance (0 = disabled).",
+                "policy_section": "Backup policy",
+                "retention_label_edit": "Retention override",
+                "retention_help_edit": "Applies on save with resource settings. Inherit clears the per-VM override.",
                 "create": "Create Backup",
                 "creating": "Creating backup…",
                 "create_success": "Backup completed!",
@@ -3571,6 +4810,7 @@
             "form_title": "Instance details",
             "plan": "Plan",
             "template": "Template (QEMU/KVM)",
+            "template_help": "Choose an existing template for this VM.",
             "template_lxc": "Template (LXC)",
             "details_status": "Status",
             "details_vmid": "VMID",
@@ -3588,6 +4828,8 @@
             "ip": "IP (optional)",
             "hostname": "Hostname",
             "notes": "Notes",
+            "expires_at": "Expiry Date",
+            "expires_at_help": "VM will be automatically suspended on this date. Leave empty for no expiration.",
             "owner": "Owner",
             "owner_help": "Assign this VM to a user. Required.",
             "select_owner": "Select owner…",
@@ -3598,9 +4840,11 @@
             "owner_uuid_help": "User UUID from Users panel. Leave empty to unset owner.",
             "select_plan": "Select a plan",
             "select_template": "Select a template (required for QEMU)",
+            "select_ip": "Select IP",
             "no_templates_qemu": "No QEMU/KVM templates for this node. Add a template in VM Nodes → this node → Templates tab.",
             "no_templates_lxc": "No LXC templates for this node. Add an LXC template in VM Nodes → this node → Templates tab.",
             "no_free_ips": "No free IPs for this node. Add IPs in VM Node.",
+            "ip_pool_required": "Configure at least one IP in the node IP pool, then try again.",
             "details": {
                 "title": "VDS Instance Details",
                 "subtitle": "Viewing details for {name}",
@@ -3633,6 +4877,8 @@
             "node": "VDS Node",
             "select_node": "Select node",
             "node_help": "Proxmox node where the VM will be created.",
+            "proxmox_node": "Proxmox Node",
+            "proxmox_node_help": "Exact Proxmox cluster node where this VM will be created.",
             "select_node_template": "Select a node, template, and ensure IPs are available.",
             "memory": "Memory (MB)",
             "cpus": "CPUs",
@@ -3669,6 +4915,7 @@
             "no_results": "No VDS instances found",
             "unknown_node": "Unknown Node",
             "unassigned": "Unassigned",
+            "assign_owner": "Assign owner",
             "filters": {
                 "user": "Filter by user",
                 "user_selected": "User: {username}",
@@ -3701,6 +4948,8 @@
             },
             "suspend": "Suspend",
             "unsuspend": "Unsuspend",
+            "suspend_confirm_title": "Suspend VDS instance?",
+            "suspend_confirm_description": "Provide a reason for staff before suspending {hostname}. The owner will be notified by email.",
             "suspend_success": "VDS instance suspended successfully",
             "unsuspend_success": "VDS instance unsuspended successfully"
         },
@@ -3767,6 +5016,11 @@
                 "location": "Location",
                 "select_location": "Select a location",
                 "select_location_description": "Select a location for this node. Total locations: {total}",
+                "location_picker_existing": "Existing",
+                "location_picker_create": "New location",
+                "create_location_hint": "Creates a game server location (for Wings), then selects it for this node.",
+                "create_location_submit": "Create and select",
+                "create_location_name_required": "Enter a location name (at least 2 characters).",
                 "search_locations": "Search locations by name...",
                 "no_locations_found": "No locations found",
                 "name_placeholder": "My Production Node",
@@ -3777,6 +5031,7 @@
                 "fqdn_required": "FQDN is required",
                 "fqdn_invalid": "Invalid FQDN format",
                 "location_required": "Location is required",
+                "location_invalid_type": "Wings nodes must use a game server location, not a VPS/VDS or web location.",
                 "daemon_base_required": "Daemon base path is required",
                 "ipv4_invalid": "Invalid IPv4 address",
                 "ipv6_invalid": "Invalid IPv6 address",
@@ -3793,8 +5048,8 @@
                 "config_copied": "Wings configuration copied to clipboard",
                 "setup_command_title": "Quick setup",
                 "setup_command_help": "Run these commands on your node server in order. Step 1 installs FeatherWings; step 2 fetches config from the panel and restarts the daemon.",
-                "setup_step_1": "Step 1 — Install FeatherWings",
-                "setup_step_2": "Step 2 — Fetch config and restart FeatherWings",
+                "setup_step_1": "Step 1 Install FeatherWings",
+                "setup_step_2": "Step 2 Fetch config and restart FeatherWings",
                 "copy_setup_command": "Copy command",
                 "setup_command_copied": "Setup command copied to clipboard",
                 "setup_command_then": "Step 2 creates /etc/featherpanel if needed, writes the config, and restarts FeatherWings. Run step 1 first if FeatherWings is not installed.",
@@ -3807,6 +5062,33 @@
                 "delete": "Delete node",
                 "confirm_delete": "Confirm Delete",
                 "cancel_delete": "Cancel"
+            },
+            "mass_transfer": {
+                "button": "Mass move servers",
+                "title": "Mass move servers",
+                "description": "Move servers from {node} to another node. Free allocations on the destination are assigned automatically — no need to pick an IP for each server.",
+                "destination_node": "Destination node",
+                "select_destination": "Select destination node...",
+                "transferable": "Can move",
+                "allocations_needed": "Allocations needed",
+                "free_on_destination": "Free on destination",
+                "batch_limit": "Max per run",
+                "insufficient_allocations": "The destination node does not have enough free allocations for your selection.",
+                "auto_allocate_note": "Primary and extra ports are filled from unused allocations on the destination node, in IP/port order.",
+                "move_all": "Move all ({count})",
+                "select_all": "Select all",
+                "deselect_all": "Deselect all",
+                "no_transferable": "No servers on this node can be moved right now.",
+                "allocations_per_server": "{count} allocation(s)",
+                "skipped_count": "{count} server(s) skipped (installing, restoring, or already transferring).",
+                "start": "Move {count} server(s)",
+                "confirm_title": "Start mass move?",
+                "confirm_description": "Move {count} server(s) from {source} to {destination}. Servers will be stopped during transfer. Backups on the old node are removed from the panel.",
+                "confirm_submit": "Start transfers",
+                "complete_summary": "Mass move: {initiated} started, {failed} failed, {skipped} skipped.",
+                "failed": "Mass move failed",
+                "preview_failed": "Could not load move preview",
+                "fetch_nodes_failed": "Failed to load nodes"
             },
             "help": {
                 "what": {
@@ -3837,6 +5119,7 @@
                 "create_allocation": "Create Allocation",
                 "delete_unused": "Delete Unused",
                 "delete_selected": "Delete Selected",
+                "change_address": "Change IP/Alias",
                 "ip_address": "IP Address",
                 "port": "Port",
                 "ip_alias": "IP Alias",
@@ -3883,6 +5166,16 @@
                     "title": "Edit Allocation",
                     "description": "Edit details for allocation: {ip}:{port}"
                 },
+                "bulk_address": {
+                    "title": "Change Allocation IP/Alias",
+                    "description": "Update every allocation on this node that currently uses a specific IP address. Assigned allocations are updated in place.",
+                    "from_ip": "Current IP Address",
+                    "to_ip": "New IP Address",
+                    "to_ip_help": "Leave blank if you only want to update the alias.",
+                    "update_alias": "Update IP alias",
+                    "alias_help": "When enabled, leave the alias blank to clear it for the matching allocations.",
+                    "submit": "Update Allocations"
+                },
                 "no_results": "No allocations found matching your search.",
                 "messages": {
                     "fetch_failed": "Failed to fetch allocations",
@@ -3890,6 +5183,9 @@
                     "create_failed": "Failed to create allocations",
                     "update_success": "Allocation updated successfully",
                     "update_failed": "Failed to update allocation",
+                    "bulk_address_success": "Allocation IP/Alias updated successfully",
+                    "bulk_address_failed": "Failed to update allocation IP/Alias",
+                    "bulk_address_missing": "Enter a current IP and either a new IP or alias update.",
                     "delete_success": "Allocation deleted successfully",
                     "delete_failed": "Failed to delete allocation",
                     "bulk_delete_success": "Selected allocations deleted successfully",
@@ -3919,7 +5215,8 @@
                     "restart_checkbox": "Restart Wings after saving",
                     "restart_help": "If enabled, Wings will be restarted to apply the new configuration immediately.",
                     "restart_notice": "Wings is being restarted to apply the new configuration.",
-                    "save_success": "Configuration saved successfully."
+                    "save_success": "Configuration saved successfully.",
+                    "load_failed_title": "Failed to Load Configuration"
                 },
                 "diagnostics": {
                     "title": "Diagnostics",
@@ -3981,6 +5278,8 @@
                     "configure_disabled_notice": "You must disable this module before you can change its configuration.",
                     "config_save_success": "Configuration for {name} saved successfully.",
                     "config_save_failed": "Failed to save configuration for {name}.",
+                    "config_fetch_failed": "Failed to fetch module configuration",
+                    "invalid_json_config": "Invalid JSON configuration",
                     "enabled_badge": "Enabled",
                     "disabled_badge": "Disabled",
                     "no_modules": "No Modules Found",
@@ -4104,11 +5403,56 @@
                 }
             }
         },
+        "mounts": {
+            "title": "Mounts",
+            "description": "Define host folders Wings may bind into containers. Link each mount to nodes for Wings allowed_mounts, optionally restrict by spell, then enable per server.",
+            "create": "Create mount",
+            "search_placeholder": "Search by name or path…",
+            "no_results": "No mounts defined",
+            "columns": {
+                "name": "Name",
+                "paths": "Source → target",
+                "nodes": "Nodes",
+                "spells": "Spells",
+                "read_only": "Access"
+            },
+            "read_only": "Read-only",
+            "read_write": "Read/write",
+            "admin_only": "Admin-assigned only",
+            "form": {
+                "name": "Name",
+                "source": "Host source path",
+                "target": "Container path",
+                "read_only": "Read-only in container",
+                "user_mountable": "Users can self-attach",
+                "user_mountable_help": "When enabled, end users may attach this mount to their own servers wherever your panel exposes mounts (client API / user UI). Disabled = administrators assign mounts only. Defaults to on for new mounts, matching Pelican.",
+                "description": "Description"
+            },
+            "drawer_create_title": "New mount",
+            "drawer_edit_title": "Edit mount",
+            "form_required": "Name, source path, and target path are required.",
+            "links_filter_placeholder": "Filter nodes or spells…",
+            "links_nodes_filter_placeholder": "Filter nodes…",
+            "links_spells_filter_placeholder": "Filter spells…",
+            "links_atomic_failed": "Failed to save node and spell links for this mount.",
+            "links_nodes_failed": "Failed to save node links for this mount.",
+            "links_spells_failed": "Node links were saved, but saving spell links failed. Reopen the editor to try again.",
+            "links": {
+                "nodes": "Nodes (required for Wings allow list)",
+                "spells": "Spells (empty = all spells)",
+                "hint": "Assign to nodes so Wings adds the source to allowed_mounts. Optionally restrict to specific spells."
+            },
+            "saved": "Mount saved",
+            "deleted": "Mount deleted",
+            "confirm_delete": "Delete this mount? Servers must be detached first.",
+            "fetch_failed": "Failed to load mounts"
+        },
         "servers": {
             "title": "Servers",
             "description": "Manage all servers in your system.",
             "search_placeholder": "Search by name, description, or status...",
             "no_results": "No servers found",
+            "owner_last_seen": "Owner last seen",
             "create": "Create Server",
             "filters": {
                 "advanced": "Advanced filters",
@@ -4236,6 +5580,11 @@
                 "destination_allocation": "Destination Primary Allocation",
                 "select_node": "Select destination node...",
                 "select_allocation": "Select destination allocation...",
+                "auto_allocate": "Assign allocation automatically",
+                "auto_allocate_help": "Uses the next free allocation(s) on the destination node for the primary port and any extra ports.",
+                "search_nodes": "Search nodes...",
+                "search_allocations": "Search allocations...",
+                "no_free_allocations": "No free allocations found",
                 "current_node": "Current Node",
                 "server": "Server",
                 "warning_banner": "⚠️ USE AT YOUR OWN RISK ⚠️",
@@ -4246,6 +5595,8 @@
                 "beta_item5": "Backups will be deleted.",
                 "beta_item7": "Always create and verify backups EXTERNALLY before transferring.",
                 "beta_item8": "Network issues can cause partial transfers or data corruption.",
+                "fetch_nodes_failed": "Failed to fetch destination nodes",
+                "fetch_allocations_failed": "Failed to fetch destination allocations",
                 "submit": "I Understand - Start Transfer",
                 "submitting": "Starting Transfer..."
             },
@@ -4269,6 +5620,18 @@
                 "select_owner_description": "Select a user to assign as the server owner. Total users: {total}",
                 "search_users": "Search users by username or email...",
                 "no_users_found": "No users found",
+                "owner_picker_existing": "Browse users",
+                "owner_picker_create": "Create user",
+                "owner_create_tab_description": "Create a new panel user (same as Admin → Users → Create). They become the server owner.",
+                "owner_create_password_hint": "Password must be at least 8 characters. The user can sign in with these credentials; a welcome email may be sent if mail is enabled.",
+                "infra_prerequisite_title": "Infrastructure required",
+                "infra_short_locations": "Create at least one game location first. You can convert or add locations under Admin → Locations.",
+                "infra_short_nodes": "Create at least one Wings node and link it to a location.",
+                "infra_counts_hint": "{locations} game location(s) · {nodes} node(s)",
+                "infra_cta_locations": "Add game location",
+                "infra_cta_nodes": "Create node",
+                "infra_refresh_check": "Recheck infrastructure",
+                "infra_prerequisite_toast": "Add at least one game location and one node before continuing.",
                 "skip_scripts": "Skip Scripts",
                 "skip_scripts_help": "Whether to skip startup scripts during server initialization.",
                 "location": "Location",
@@ -4280,6 +5643,19 @@
                 "allocation": "Default Allocation",
                 "allocation_help": "The main allocation that will be assigned to this server.",
                 "select_allocation": "Select allocation...",
+                "allocation_picker_existing": "Browse allocations",
+                "allocation_picker_create": "Create new",
+                "allocation_create_tab_description": "Add allocations on this node using manual IP/port or a game preset range (same as the node allocations tab).",
+                "allocation_created_multiple_hint": "Created {count} allocations. The first is selected for this server.",
+                "realm_picker_existing": "Browse realms",
+                "realm_picker_create": "Create realm",
+                "realm_create_tab_description": "Create a new realm (spell category). After creation it is selected for this server.",
+                "spell_picker_this_realm": "This realm",
+                "spell_picker_cloud": "Cloud marketplace",
+                "spell_picker_cloud_description": "Install spells from the public Pterodactyl egg registry into the selected realm, same as the marketplace.",
+                "spell_picker_browse_empty_hint": "This realm has no spells yet. Use the Cloud marketplace tab to install one, then it will be selected for this server.",
+                "spell_install_to_realm": "Install to realm & use",
+                "spell_picker_cloud_more_pages": "Showing the first page of results ({total} pages available). Open the full marketplace to browse all pages.",
                 "realm": "Realm",
                 "select_realm": "Select a realm...",
                 "select_realm_description": "Select a realm for this server. Total realms: {total}",
@@ -4318,6 +5694,11 @@
                 "allocation_limit_help": "The total number of allocations a user is allowed to create for this server.",
                 "backup_limit": "Backup Limit",
                 "backup_limit_help": "The total number of backups that can be created for this server.",
+                "backup_retention_mode": "Backup retention override",
+                "backup_retention_mode_help": "Inherit uses the panel default (Admin → Settings → Servers). Hard limit blocks new backups when full. FIFO rolling removes the oldest unlocked backup so scheduled or manual backups can continue.",
+                "backup_retention_inherit": "Inherit panel default",
+                "backup_retention_hard_limit": "Hard limit (block when full)",
+                "backup_retention_fifo": "FIFO rolling (drop oldest)",
                 "startup_command": "Startup Command",
                 "startup_command_help": "The command that will be used to start the server. Populated from selected spell. The following data substitutes are available: {SERVER_MEMORY}, {SERVER_IP}, {SERVER_PORT}, and spell variables.",
                 "create_server": "Create Server",
@@ -4364,7 +5745,7 @@
                         "startup_command": "Startup Command",
                         "unlimited": "∞ Unlimited",
                         "disabled": "Disabled",
-                        "no_value": "—"
+                        "no_value": " "
                     },
                     "validation": {
                         "name_required": "Server name is required",
@@ -4377,6 +5758,11 @@
                         "docker_image_required": "Docker image is required",
                         "startup_required": "Startup command is required"
                     }
+                },
+                "messages": {
+                    "spell_details_failed": "Failed to fetch spell details",
+                    "created": "Server created successfully!",
+                    "create_failed": "Failed to create server"
                 }
             },
             "edit": {
@@ -4392,6 +5778,7 @@
                     "application": "Application",
                     "limits": "Limits",
                     "startup": "Startup",
+                    "mounts": "Mounts",
                     "allocations": "Allocations",
                     "actions": "Actions"
                 },
@@ -4401,6 +5788,8 @@
                     "external_id": "External ID",
                     "external_id_placeholder": "External ID (optional)",
                     "external_id_help": "External identifier for this server from an external system",
+                    "expires_at": "Expiry Date",
+                    "expires_at_help": "Server will be automatically suspended on this date. Leave empty for no expiration.",
                     "skip_zerotrust": "Skip Zero Trust",
                     "skip_zerotrust_help": "Skip zero trust checks during server operations",
                     "location_node": "Node & Location",
@@ -4429,6 +5818,13 @@
                     "description": "Configure the startup command for this server",
                     "available_variables": "Available Variables:"
                 },
+                "mounts": {
+                    "title": "Bind mounts",
+                    "description": "Mount host directories into this server container (same as Pelican mounts). Node must allow the source path; save to sync Wings.",
+                    "empty": "No mounts available for this node and spell. Create mounts under Admin → Mounts and link them to this node (and to this spell if you restrict by spell).",
+                    "loading": "Loading mounts…",
+                    "assignable_load_failed": "Could not load assignable mounts. Mount selection was reset; try again or refresh the page."
+                },
                 "allocations": {
                     "title": "Network Allocations",
                     "description": "Manage network allocations (IP:Port) for this server",
@@ -4443,7 +5839,10 @@
                     "assign_success": "Allocation assigned successfully",
                     "add": "Add Allocation",
                     "delete_success": "Allocation removed successfully",
-                    "delete_failed": "Failed to remove allocation"
+                    "delete_failed": "Failed to remove allocation",
+                    "set_primary": "Set Primary",
+                    "primary_success": "Primary allocation updated successfully",
+                    "primary_failed": "Failed to set primary allocation"
                 },
                 "actions": {
                     "suspension_title": "Suspension Status",
@@ -4453,6 +5852,8 @@
                     "active": "Active",
                     "suspend": "Suspend",
                     "unsuspend": "Unsuspend",
+                    "suspend_confirm_title": "Suspend Server?",
+                    "suspend_confirm_description": "Provide a reason for staff before suspending {name}. The owner will be notified by email.",
                     "suspend_success": "Server suspended successfully",
                     "suspend_failed": "Failed to suspend server",
                     "unsuspend_success": "Server unsuspended successfully",
@@ -4462,6 +5863,14 @@
                     "delete": "Delete Server",
                     "delete_confirm_title": "Delete Server?",
                     "delete_confirm_description": "This will permanently delete {name} and all associated files, databases, and backups. This action cannot be undone.",
+                    "soft_delete": "Soft Delete",
+                    "hard_delete": "Hard Delete",
+                    "soft_delete_confirm_title": "Soft Delete Server?",
+                    "soft_delete_confirm_description": "Are you sure you want to soft delete {name}? This will remove the server using the normal delete flow.",
+                    "hard_delete_confirm_title": "Hard Delete Server?",
+                    "hard_delete_confirm_description": "Are you sure you want to hard delete {name}? This bypasses the normal delete flow.",
+                    "hard_delete_target_node_warning": "FILES WILL NOT BE DELETED ON THE TARGET NODE!!!!!!!",
+                    "hard_delete_restore_warning": "DO NOT RUN THIS IF YOU STILL MAYBE HAVE A WAY TO RESTORE FILES.",
                     "delete_success": "Server deleted successfully",
                     "delete_failed": "Failed to delete server"
                 }
@@ -4487,6 +5896,7 @@
             },
             "sidebar": {
                 "ticket_info": "Ticket Information",
+                "user_info_unavailable": "User info unavailable",
                 "tabs": {},
                 "labels": {
                     "id": "ID",
@@ -4644,6 +6054,8 @@
             },
             "view": {
                 "original_request": "Original Request",
+                "mail_preview_title": "Email Preview",
+                "email_body": "Email Body",
                 "edit": "Edit Ticket",
                 "close": "Close Ticket",
                 "reopen": "Reopen Ticket",
@@ -4742,11 +6154,42 @@
             "release_type": "Release Type",
             "up_to_date": "Your system is up to date and secured.",
             "update_available": "Update {version} Available",
+            "current_version_unknown": "Current version unknown",
+            "update_to_latest_hint": "Update to latest stable build",
+            "docker_pull_offer_title": "Docker pull available",
+            "docker_pull_offer_hint": "The catalog may not resolve this channel or exact build tag. Trigger a Docker update to pull whatever your compose/stack targets.",
+            "unlisted_update_server_badge": "Not registered on the FeatherPanel update server",
+            "unlisted_update_server_hint": "This build’s version string is not listed in the public FeatherPanel version API. That is normal for development images, custom builds, or forks. Release metadata and comparisons to “latest stable” may be limited.",
             "update_description": "Security patches and performance optimizations",
             "update_now": "Update System Now",
             "recommended_php": "Recommended PHP Version: ",
             "view_changelog": "View Detailed Changelog",
             "verify_integrity": "Verify Integrity",
+            "integrity_modal_title": "File integrity scan",
+            "integrity_modal_desc": "SHA-256 hashes of core backend code (app tree, public/index.php, composer metadata). Compare results to a baseline stored on the server after a known-good state.",
+            "integrity_scan_running": "Hashing files…",
+            "integrity_scan_failed": "Integrity scan failed.",
+            "integrity_files": "Files hashed",
+            "integrity_duration": "Duration",
+            "integrity_bytes": "Bytes hashed",
+            "integrity_scope": "Does not include vendor, storage data, or uploaded assets only panel source and bootstrap files.",
+            "integrity_baseline_title": "Saved baseline",
+            "integrity_baseline_saved_at": "Recorded {date}",
+            "integrity_baseline_unknown_date": "Baseline file present (record date unknown)",
+            "integrity_baseline_version": "Panel version at record: {v}",
+            "integrity_no_baseline": "No baseline yet. After you trust this installation (e.g. fresh install or post-update), save a baseline. Future scans will flag added, removed, or modified files.",
+            "integrity_drift_heading": "Comparison vs baseline",
+            "integrity_modified": "Modified",
+            "integrity_missing": "Missing",
+            "integrity_extra": "New",
+            "integrity_read_errors": "{count} file(s) could not be read.",
+            "integrity_skipped_large": "{count} file(s) skipped (over size limit).",
+            "integrity_match_ok": "All tracked paths match the saved baseline.",
+            "integrity_drift_warning": "Differences detected review modified or missing paths. New files may be normal after an update; update your baseline if intentional.",
+            "integrity_save_baseline": "Save current scan as baseline",
+            "integrity_copy_report": "Copy full report",
+            "integrity_baseline_saved": "Baseline saved to storage/config.",
+            "integrity_baseline_failed": "Could not save baseline.",
             "official_site": "Official Site",
             "last_checked": "Last checked: {date}",
             "changelog": {
@@ -4771,8 +6214,7 @@
                     "follow_prompts": "Follow the on-screen prompts",
                     "complete": "The update will complete automatically"
                 }
-            },
-            "integrity_coming_soon": "This feature is coming soon in a future update."
+            }
         },
         "quick_links": {
             "title": "Quick Actions",
@@ -4798,6 +6240,10 @@
                 "last_7_days": "Last 7 days",
                 "last_30_days": "Last 30 days",
                 "most_active_time": "Most active time",
+                "total_activities": "Total activities",
+                "all_time_activity_events": "All-time platform activity events",
+                "top_activity_type": "Top activity type",
+                "no_activity_data": "No activity data",
                 "trend_title": "Activity Trend (7 Days)",
                 "trend_desc": "Daily activity volume over the last week",
                 "breakdown_title": "Activity Breakdown",
@@ -4831,7 +6277,27 @@
                 "assigned": "Assigned",
                 "available": "Available",
                 "disk_usage": "Disk Usage",
-                "memory_usage": "Memory Usage"
+                "memory_usage": "Memory Usage",
+                "top_used_port": "Top used port",
+                "assigned_allocations": "Assigned: {count} allocations",
+                "top_ip_total_ports": "Top IP total ports",
+                "ip_usage": "{ip} ({percentage}% used)",
+                "no_allocation_usage_data": "No allocation usage data"
+            },
+            "languages": {
+                "title": "Language Analytics",
+                "subtitle": "Breakdown of user language preferences and locale distribution",
+                "messages": {
+                    "fetch_failed": "Failed to load language analytics"
+                },
+                "total_users": "Total Users",
+                "total_languages": "Languages",
+                "top_language": "Top Language",
+                "distribution": "Language Distribution",
+                "breakdown": "Top Languages",
+                "all_languages": "All Languages",
+                "other": "Other",
+                "trends": "12-Month Trends"
             },
             "content": {
                 "title": "Content Analytics",
@@ -4845,6 +6311,10 @@
                 "in_use": "{percentage}% in use",
                 "library": "In library",
                 "active_links": "Active links",
+                "spells_with_variables": "Spells with variables",
+                "privileged_scripts": "Privileged scripts: {count}",
+                "mail_templates": "Mail templates",
+                "notification_templates": "Templates available for notifications",
                 "spells_by_realm": "Spells by Realm",
                 "spells_by_realm_desc": "Spell distribution across realms",
                 "variable_types": "Variable Types",
@@ -4889,6 +6359,14 @@
                 "disk_dist_desc": "Disk allocation ranges",
                 "age_dist": "Server Age Distribution",
                 "age_dist_desc": "How old are your servers",
+                "avg_db_limit": "Avg DB limit",
+                "avg_backup_limit": "Avg backup limit: {count}",
+                "skip_scripts_enabled": "Skip scripts enabled",
+                "oom_disabled": "OOM disabled: {count}",
+                "server_variables": "Server variables",
+                "custom_runtime_variables": "Custom runtime variable values",
+                "server_activity_events": "Server activity events",
+                "operational_events": "Operational events across all servers",
                 "unknown": "Unknown"
             },
             "system": {
@@ -4905,6 +6383,14 @@
                 "delivery_rate": "Delivery rate",
                 "queue_status": "Mail Queue Status",
                 "queue_status_desc": "Email queue distribution",
+                "chat_conversations": "Chat conversations",
+                "messages_count": "Messages: {count}",
+                "chat_users_30d": "Chat users (30d)",
+                "avg_messages_per_conversation": "Avg msgs/conversation: {count}",
+                "api_clients": "API clients",
+                "oauth2_authorizations": "OAuth2 authorizations: {count}",
+                "enabled_oidc_providers": "Enabled OIDC providers",
+                "identity_providers_configured": "Identity providers configured",
                 "recent_activity": "Recent Mail Queue Activity",
                 "recent_activity_desc": "Latest email processing status",
                 "no_activity": "No recent mail queue activity",
@@ -4926,6 +6412,10 @@
                 "banned_pct": "{percentage}% of total",
                 "verified_pct": "{percentage}% verified",
                 "two_fa_pct": "{percentage}% with 2FA",
+                "unverified": "Unverified",
+                "pending_email_verification": "Users pending email verification",
+                "not_secured": "Not secured",
+                "fully_secured": "Fully secured: {count}",
                 "reg_trend": "Registration Trend (30 Days)",
                 "reg_trend_desc": "Daily user registrations over the last 30 days",
                 "role_dist": "User Distribution by Role",
@@ -4948,6 +6438,77 @@
                 "growth_7d": "Growth Rate (7 days)",
                 "growth_30d": "Growth Rate (30 days)",
                 "growth_comparison": "{new} new vs {previous} previous"
+            },
+            "vds": {
+                "title": "VDS Analytics",
+                "subtitle": "VDS-only KPIs for nodes, templates, instances, backups, and operations.",
+                "error": "Failed to fetch VDS analytics data.",
+                "instances": "Instances",
+                "nodes": "Nodes",
+                "templates": "Templates",
+                "backups": "Backups",
+                "tasks": "Tasks",
+                "subusers": "Subusers",
+                "instance_ips": "Instance IPs",
+                "activities": "Activities",
+                "vds_instances": "VDS Instances",
+                "vds_nodes": "VDS Nodes",
+                "instance_backups": "Instance Backups",
+                "instance_activities": "Instance Activities",
+                "nodes_templates": "Nodes: {nodes}, Templates: {templates}",
+                "templates_tasks": "Templates: {templates}, Tasks: {tasks}",
+                "ips_subusers": "IPs: {ips}, Subusers: {subusers}",
+                "total_vds_objects": "Total VDS objects: {count}",
+                "breakdown": "VDS Breakdown",
+                "breakdown_desc": "VDS-related object totals",
+                "totals": "VDS Totals",
+                "totals_desc": "Total VDS object count",
+                "vds_objects": "VDS Objects",
+                "runtime_breakdown": "VDS Runtime Breakdown",
+                "runtime_breakdown_desc": "Operational VDS entities and usage"
+            },
+            "knowledgebase": {
+                "title": "Knowledgebase Analytics",
+                "subtitle": "Knowledgebase content KPIs.",
+                "categories": "Categories",
+                "articles": "Articles",
+                "attachments": "Attachments",
+                "tags": "Tags",
+                "category_entries": "Knowledgebase category entries",
+                "published_articles": "Published/support articles",
+                "uploaded_attachments": "Uploaded article attachments",
+                "total_kb_objects": "Total KB Objects",
+                "all_entities": "All knowledgebase entities",
+                "breakdown": "Knowledgebase Breakdown",
+                "breakdown_desc": "Distribution by KB object type",
+                "objects": "Knowledgebase Objects",
+                "objects_desc": "Counts across KB entities"
+            },
+            "tickets": {
+                "title": "Tickets Analytics",
+                "subtitle": "Ticketing KPIs and usage metrics.",
+                "tickets": "Tickets",
+                "messages": "Messages",
+                "attachments": "Attachments",
+                "categories": "Categories",
+                "priorities": "Priorities",
+                "statuses": "Statuses",
+                "today": "Today",
+                "this_week": "This Week",
+                "last_week": "Last Week",
+                "total_tickets": "Total tickets",
+                "ticket_messages": "Ticket Messages",
+                "conversation_volume": "Conversation volume",
+                "ticket_attachments": "Ticket Attachments",
+                "uploaded_files": "Uploaded files",
+                "weekly_growth": "Weekly Growth",
+                "weekly_comparison": "{thisWeek} this week vs {lastWeek} last week",
+                "breakdown": "Ticket Breakdown",
+                "breakdown_desc": "Distribution by entity type",
+                "creation_velocity": "Ticket Creation Velocity",
+                "creation_velocity_desc": "Today and week-over-week ticket volume",
+                "recent_trend": "Recent Ticket Trend (14d)",
+                "recent_trend_desc": "Tickets created per day over the most recent 14 days"
             },
             "nav": {
                 "users_desc": "Comprehensive user statistics including registrations, roles, security, and growth metrics",
@@ -5035,9 +6596,14 @@
                 "cloud_connected": {
                     "title": "Cloud Account Connected",
                     "credits": "Credits",
-                    "team": "Team"
+                    "team": "Team",
+                    "action": "Cloud management"
                 },
                 "popular": "Popular Plugins",
+                "search_section_title": "Search plugins",
+                "search_helper": "Search by addon name, author, or keyword from the description. Press Enter or use the Search button to load results.",
+                "search_button": "Search",
+                "sort_label": "Sort plugin list",
                 "search_placeholder": "Search online addons...",
                 "verified_only": "Verified Only",
                 "loading": "Loading online addons...",
@@ -5052,8 +6618,10 @@
                 "install": "Install",
                 "installing": "Installing...",
                 "requires_cloud": "Requires Cloud Account",
+                "premium_not_licensed": "Not licensed on this FeatherCloud team",
                 "verified": "Verified",
                 "premium": "Premium",
+                "purchase_at_store": "Buy on store",
                 "website": "Website",
                 "downloads": "downloads",
                 "tag_label": "Tag:",
@@ -5065,9 +6633,32 @@
                 "available": "Available Plugins",
                 "clear_search": "Clear Search",
                 "no_results": "No results found",
+                "online_list_heading": "Online addons",
+                "online_list_count": "Showing {shown} of {total} addons",
+                "purchase_official_store": "Official store",
+                "results_title": "Search results",
+                "results_showing": "Showing {shown} of {total} addons",
+                "load_more": "Load more",
+                "load_more_hint": "Loaded page {page} of {pages}. Tap to fetch the next batch.",
+                "results_count": "{count} addons",
                 "featured": "Featured",
+                "has_dependencies": "Has Dependencies",
                 "install_success": "Successfully installed {identifier}",
                 "install_failed": "Failed to install plugin",
+                "missing_dependencies": "Cannot install: missing dependencies",
+                "requirements_check_failed": "Failed to check installation requirements",
+                "requirements": {
+                    "title_ready": "Ready to Install",
+                    "title_missing": "Missing Requirements",
+                    "panel_version": "Panel Version",
+                    "panel_compatible": "Compatible with your panel version",
+                    "dependencies": "Dependencies",
+                    "please_install_deps": "Please install the missing dependencies before installing this plugin.",
+                    "composer": "Composer",
+                    "plugin": "Plugin",
+                    "php": "PHP",
+                    "php-ext": "Extension"
+                },
                 "queue": {
                     "title": "Download List",
                     "subtitle": "The following plugins were added to the download list. Click download to install them now.",
@@ -5080,7 +6671,21 @@
                     "install_success_single": "Installed 1 plugin successfully",
                     "install_success_multiple": "Installed {count} plugins successfully",
                     "install_failed": "Failed to install selected plugins",
-                    "install_failed_single": "Failed to install {identifier}"
+                    "install_failed_single": "Failed to install {identifier}",
+                    "multiple_requirements_issues": "{count} plugins have unmet requirements and cannot be installed",
+                    "premium_not_owned": "This premium addon is not in your FeatherCloud purchases. Only addons your team already owns can go in the download list.",
+                    "premium_skipped_not_owned": "Some premium plugins were skipped because your FeatherCloud team does not own them."
+                },
+                "ui_preview": {
+                    "banner_title": "UI preview mode",
+                    "banner_body": "You are viewing mock marketplace cards only. Installs are simulated (no server changes). Type a preview keyword in the search field and press Enter again to exit.",
+                    "preview_on": "Plugin UI preview turned on",
+                    "preview_off": "Plugin UI preview turned off",
+                    "install_disabled": "Preview mode: install actions are disabled",
+                    "install_simulated": "Simulated install: {identifier} (preview only)",
+                    "bulk_simulated": "Simulated batch install for {count} plugin(s) (preview only)",
+                    "open_sample_dialog": "Open sample missing-requirements dialog",
+                    "secret_hint": "Tip: type testpluginuinow or testingpluginui in the search field and press Enter to toggle UI preview (mock list, simulated installs)."
                 },
                 "repo": {
                     "title": "Plugin Repositories",
@@ -5112,6 +6717,13 @@
                     "learn_more": "Learn more"
                 },
                 "search_placeholder": "Search online spells...",
+                "search_section_title": "Search spells",
+                "search_helper": "Search by spell name, category, or keyword from the description. Press Enter or Search to load results.",
+                "search_button": "Search",
+                "online_list_heading": "Online spells",
+                "online_list_count": "Showing {shown} of {total} spells",
+                "load_more": "Load more",
+                "load_more_hint": "Loaded page {page} of {pages}. Tap to fetch the next batch.",
                 "loading": "Loading online spells...",
                 "grid": {
                     "verified": "Verified",
@@ -5125,6 +6737,14 @@
                     "title": "Install Game Server Egg",
                     "realm": "Select Realm *",
                     "realm_help": "Select the realm where this spell will be installed.",
+                    "realm_mode_existing": "Use existing realm",
+                    "realm_mode_new": "Create new realm",
+                    "new_realm_help": "Creates a realm and installs this egg there in one step. You can rename or add more spells later in Admin → Realms.",
+                    "new_realm_name": "New realm name",
+                    "new_realm_name_placeholder": "e.g. Minecraft",
+                    "new_realm_description": "Description (optional)",
+                    "new_realm_name_error": "Enter a realm name with at least 2 characters.",
+                    "create_realm_failed": "Could not create the realm. Fix any errors and try again.",
                     "install": "Install",
                     "installing": "Installing...",
                     "community_egg_title": "Pterodactyl Community Egg",
@@ -5153,7 +6773,8 @@
         "feathercloud": {
             "translations": {
                 "download_coming_soon": "Download functionality will be available when the API is ready",
-                "download_failed": "Failed to download translation"
+                "download_failed": "Failed to download translation",
+                "fetch_failed": "Failed to fetch community translations"
             }
         },
         "cloud_management": {
@@ -5241,10 +6862,17 @@
                 "warning1": "New keys will be generated immediately",
                 "warning2": "You must update your FeatherCloud account with the new keys",
                 "warning3": "Old keys will no longer work after rotation",
-                "warning4": "Cloud credentials are currently empty - premium plugins cannot be downloaded until FeatherCloud credentials are configured",
+                "warning4": "After rotation you must use Link with FeatherCloud again so FeatherCloud can issue new API keys; premium and cloud features stay offline until OAuth completes",
                 "cancel": "Cancel",
                 "confirm": "Rotate Keys",
                 "rotating": "Rotating..."
+            },
+            "messages": {
+                "credentials_load_failed": "Failed to load cloud credentials",
+                "credentials_rotated": "Keys rotated. Link with FeatherCloud again (OAuth) to restore cloud API access.",
+                "credentials_rotate_failed": "Failed to rotate cloud credentials",
+                "cloud_credentials_empty": "Cloud credentials are empty. Premium plugins cannot be downloaded until FeatherCloud credentials are configured.",
+                "oauth_link_failed": "Failed to generate OAuth2 link"
             },
             "finish": {
                 "processing": "Processing OAuth2 Callback...",
@@ -5252,6 +6880,9 @@
                 "failed": "Connection Failed",
                 "processing_desc": "Please wait while we save your cloud credentials...",
                 "success_desc": "Your panel is now linked with FeatherCloud. You can now access premium plugins, FeatherAI, and cloud intelligence services.",
+                "linked_toast": "Your panel has been successfully linked with FeatherCloud!",
+                "save_failed": "Failed to save cloud credentials",
+                "missing_params": "Missing required parameters: cloud_api_key and cloud_api_secret",
                 "whats_next": "What's Next?",
                 "next_step1": "Access premium plugins from the FeatherCloud marketplace",
                 "next_step2": "Use FeatherAI for intelligent automation and analysis",
@@ -5268,7 +6899,9 @@
             "search_placeholder": "Search by username, email, or role...",
             "last_seen": "Last seen",
             "table": {},
-            "actions": {},
+            "actions": {
+                "force_verify_email": "Force verify email"
+            },
             "create": {
                 "title": "Create User",
                 "description": "Fill in the details to create a new user",
@@ -5317,7 +6950,11 @@
                 "banned": "Banned",
                 "2fa": "2FA",
                 "no_2fa": "No 2FA",
-                "discord_linked": "Discord Linked"
+                "discord_linked": "Discord Linked",
+                "email_unverified": "Email Unverified",
+                "ldap": "LDAP",
+                "oidc": "OIDC/SSO",
+                "local": "Local"
             },
             "help": {
                 "managing": {
@@ -5341,6 +6978,8 @@
                 "description": "Edit user details and permissions.",
                 "ban_user": "Ban User",
                 "unban_user": "Unban User",
+                "ban_confirm_title": "Ban User?",
+                "ban_confirm_description": "Provide a reason for staff before banning {username}. The user will be notified by email.",
                 "disable_2fa": "Disable 2FA",
                 "unlink_discord": "Unlink Discord",
                 "loading": "Loading user...",
@@ -5469,6 +7108,10 @@
                 "sending_email": "Sending...",
                 "discord_confirm": "Are you sure you want to unlink Discord from this user?",
                 "ban_confirm": "Are you sure you want to ban/unban this user?",
+                "unban_confirm": "Are you sure you want to unban this user?",
+                "force_verify_email_confirm": "Force verify {username}'s email address? This lets the user log in without using their verification link.",
+                "force_verify_email_success": "User email verified successfully",
+                "force_verify_email_failed": "Failed to verify user email",
                 "fetch_failed": "Failed to fetch users",
                 "delete_confirm": "Are you sure you want to delete user {username}?",
                 "updating": "Updating user..."
@@ -5660,13 +7303,32 @@
                 "save": "Save Changes"
             },
             "messages": {
-                "updated": "Knowledgebase updated successfully"
+                "updated": "Knowledgebase updated successfully",
+                "fetch_failed": "Failed to fetch knowledgebase data"
+            },
+            "order": {
+                "title": "Reorder Articles",
+                "subtitle": "Drag and drop articles to change their display order",
+                "filter_by_category": "Filter by Category",
+                "all_categories": "All Categories",
+                "no_articles": "No articles found",
+                "order": "Order",
+                "unsaved_changes": "You have unsaved changes",
+                "messages": {
+                    "saved": "Article order saved successfully",
+                    "save_failed": "Failed to save article order"
+                }
             }
         },
         "settings": {
             "title": "Settings",
             "subtitle": "Manage your panel settings.",
             "no_settings": "No settings available.",
+            "search_placeholder": "Search settings by name, key, or description…",
+            "search_clear": "Clear",
+            "search_no_results": "No settings match your search.",
+            "search_try_other": "Try another term or clear the search to see all categories.",
+            "search_showing": "Showing {shown} of {total} in this category.",
             "actions": {
                 "save": "Save Changes",
                 "upload_logs": "Upload Logs"
@@ -5679,7 +7341,181 @@
             },
             "logs": {
                 "uploading": "Uploading logs...",
-                "upload_failed": "Failed to upload logs."
+                "upload_failed": "Failed to upload logs.",
+                "dialog_description": "Logs were uploaded. You can share these URLs with support.",
+                "panel_logs": "Panel logs (web)",
+                "system_logs": "System logs (app)",
+                "runner_logs": "Runner logs (async-runner)",
+                "upload_failed_generic": "Failed to upload logs."
+            },
+            "email_test": {
+                "title": "Test Email Configuration",
+                "description": "Send a test email to your account to verify SMTP settings are working correctly. Required by some providers like SendGrid.",
+                "button": "Send Test Email",
+                "sending": "Sending test email...",
+                "success": "Test email sent successfully! Please check your inbox.",
+                "failed_short": "Failed to send test email",
+                "failed": "Failed to send test email. Please check your SMTP settings.",
+                "troubleshooting": "If emails aren't being sent, check the async_runner logs on your server: cd /var/www/featherpanel && docker compose logs async-runner -f"
+            },
+            "docker_update": {
+                "button": "Update Docker Deployment",
+                "in_progress_button": "System Update Ongoing",
+                "updating": "Updating Docker Deployment...",
+                "confirm": "This will pull the latest FeatherPanel Docker images and recreate containers. Continue?",
+                "success": "Docker update has been triggered successfully.",
+                "failed": "Failed to trigger Docker update.",
+                "confirm_modal": {
+                    "title": "Update FeatherPanel",
+                    "description": "This will pull the latest FeatherPanel Docker images and recreate containers. Do you want to continue?",
+                    "confirm": "Update to Latest",
+                    "cancel": "Cancel"
+                },
+                "progress_modal": {
+                    "title": "System update ongoing",
+                    "description": "Please wait for FeatherPanel to update. Do not close this tab. Containers are restarting, so your browser may show a connection error—that usually means the update has started. This page will refresh periodically until the panel responds again."
+                }
+            },
+            "fields": {
+                "captcha_provider": {
+                    "label": "Captcha Provider",
+                    "description": "Choose which captcha service to use: Cloudflare Turnstile, hCaptcha, Google reCAPTCHA, Friendly Captcha, or reForge Captcha.",
+                    "options": {
+                        "turnstile": "Cloudflare Turnstile",
+                        "hcaptcha": "hCaptcha",
+                        "recaptcha": "Google reCAPTCHA",
+                        "friendlycaptcha": "Friendly Captcha",
+                        "reforge": "reForge Captcha"
+                    }
+                },
+                "turnstile_enabled": {
+                    "label": "Captcha Enabled",
+                    "description": "Enable or disable global captcha protection for authentication and sensitive forms."
+                },
+                "turnstile_key_pub": {
+                    "label": "Cloudflare Turnstile Site Key",
+                    "description": "The public site key provided by Cloudflare Turnstile."
+                },
+                "turnstile_key_priv": {
+                    "label": "Cloudflare Turnstile Secret Key",
+                    "description": "The private secret key provided by Cloudflare Turnstile."
+                },
+                "hcaptcha_site_key": {
+                    "label": "hCaptcha Site Key",
+                    "description": "The public site key provided by hCaptcha."
+                },
+                "hcaptcha_secret_key": {
+                    "label": "hCaptcha Secret Key",
+                    "description": "The private secret key provided by hCaptcha."
+                },
+                "recaptcha_site_key": {
+                    "label": "Google reCAPTCHA Site Key",
+                    "description": "The public site key provided by Google reCAPTCHA."
+                },
+                "recaptcha_secret_key": {
+                    "label": "Google reCAPTCHA Secret Key",
+                    "description": "The private secret key provided by Google reCAPTCHA."
+                },
+                "recaptcha_version": {
+                    "label": "Google reCAPTCHA version",
+                    "description": "v2 shows a checkbox challenge. v3 runs invisibly and uses a risk score. Create the matching key type in Google reCAPTCHA Admin."
+                },
+                "recaptcha_v3_min_score": {
+                    "label": "reCAPTCHA v3 minimum score",
+                    "description": "Scores range from 0.0 (likely bot) to 1.0 (likely human). Requests below this value are rejected. Only used when version is v3."
+                },
+                "recaptcha_v3_action": {
+                    "label": "reCAPTCHA v3 action name",
+                    "description": "Short label for this check (e.g. submit, login). Must match what the panel sends and must use only letters, numbers, underscores, and slashes."
+                },
+                "friendly_captcha_site_key": {
+                    "label": "Friendly Captcha Site Key",
+                    "description": "The public site key provided by Friendly Captcha."
+                },
+                "friendly_captcha_secret_key": {
+                    "label": "Friendly Captcha Secret Key",
+                    "description": "The private secret key provided by Friendly Captcha."
+                },
+                "reforge_captcha_site_key": {
+                    "label": "reForge Captcha site key",
+                    "description": "Public site key from the reForge Captcha dashboard (Sites → your site)."
+                },
+                "reforge_captcha_secret_key": {
+                    "label": "reForge Captcha secret key",
+                    "description": "Private secret key from the reForge Captcha dashboard. Used only on the server for POST /api/verify — never expose it in the browser."
+                },
+                "reforge_captcha_widget_type": {
+                    "label": "reForge Captcha widget type",
+                    "description": "checkbox: classic challenge; image: grid challenge. (Invisible and managed modes are not supported.)"
+                },
+                "reforge_captcha_theme": {
+                    "label": "reForge Captcha widget theme",
+                    "description": "reForge Captcha widget colours: auto follows the visitor OS, or force dark / light."
+                },
+                "reforge_captcha_size": {
+                    "label": "reForge Captcha widget size",
+                    "description": "normal or compact layout for the reForge Captcha widget."
+                },
+                "reforge_captcha_lang": {
+                    "label": "reForge Captcha widget language",
+                    "description": "Optional reForge Captcha UI language code (e.g. en, nl, de). Leave empty for the widget default."
+                },
+                "reforge_captcha_min_score": {
+                    "label": "reForge Captcha minimum verify score",
+                    "description": "After a successful reForge Captcha verify, reject if the returned score is below this (0.0–1.0). Stricter when higher."
+                },
+                "altcha_hmac_key": {
+                    "label": "Altcha HMAC Key",
+                    "description": "The HMAC key used to sign and verify Altcha payloads."
+                },
+                "email_login_enabled": {
+                    "label": "Email Login Enabled",
+                    "description": "Allow users to log in using a code sent to their email instead of a password."
+                },
+                "registration_enabled": {
+                    "label": "Registration Enabled",
+                    "description": "Allow new users to create accounts on the panel."
+                },
+                "registration_require_email_verification": {
+                    "label": "Require Email Verification",
+                    "description": "Force new users to verify their email address before they can use the panel."
+                },
+                "email_domain_blocking_enabled": {
+                    "label": "Email Domain Blocking",
+                    "description": "Block registration from specific email domains (configured in Blocked Email Domains)."
+                },
+                "telemetry": {
+                    "label": "Send Telemetry",
+                    "description": "Help us improve FeatherPanel by sending anonymous usage data."
+                },
+                "require_two_fa_admins": {
+                    "label": "Require 2FA for Admins",
+                    "description": "Force all administrators to enable Two-Factor Authentication."
+                },
+                "user_allow_avatar_change": {
+                    "label": "Allow Avatar Change",
+                    "description": "Allow users to upload and change their own profile avatars."
+                },
+                "user_allow_username_change": {
+                    "label": "Allow Username Change",
+                    "description": "Allow users to change their account username."
+                },
+                "user_allow_email_change": {
+                    "label": "Allow Email Change",
+                    "description": "Allow users to change their account email address."
+                },
+                "user_allow_first_name_change": {
+                    "label": "Allow First Name Change",
+                    "description": "Allow users to change their first name."
+                },
+                "user_allow_last_name_change": {
+                    "label": "Allow Last Name Change",
+                    "description": "Allow users to change their last name."
+                },
+                "user_allow_api_keys_create": {
+                    "label": "Allow API Key Creation",
+                    "description": "Allow non-admin users to create their own API keys."
+                }
             }
         },
         "rate_limits": {
@@ -5728,6 +7564,73 @@
                 "bulk_failed": "Failed to bulk update."
             }
         },
+        "blocked_email_domains": {
+            "title": "Blocked email domains",
+            "description": "Domains listed here cannot be used for new registrations or when users change their email, when blocking is enabled. Subdomains match (e.g. sub.example.com matches example.com).",
+            "switch_label": "Enforce blocked domains",
+            "switch_help": "Turn on to reject any address whose domain matches the list below. You can manage domains independently of this switch.",
+            "add_label": "Block a domain",
+            "add_placeholder": "example.com or user@example.com",
+            "add_button": "Add",
+            "import_bulk": "Bulk import",
+            "import_dialog_title": "Bulk import domains",
+            "import_dialog_intro": "Each line should be one domain (example.com). Lines starting with # are ignored. Duplicates already in the database are skipped.",
+            "import_tab_preset": "Bundled preset",
+            "import_tab_url": "From URL",
+            "import_tab_paste": "Paste text",
+            "import_preset_body": "Import the FeatherPanel disposable-domain preset from the bundled file. Large lists run in batches; existing domains stay unchanged.",
+            "import_preset": "Import preset list",
+            "import_help": "Adds thousands of disposable / throwaway domains from the bundled file into the database. Existing domains are skipped. You can remove entries anytime.",
+            "import_confirm": "Import the bundled disposable-domain preset ({file})? This may take a minute.",
+            "import_url_label": "Plain-text URL",
+            "import_url_placeholder": "https://example.com/disposable-domains.txt",
+            "import_url_hint": "Must be reachable over HTTP(S). Redirects are not followed open the raw file URL. Private or local addresses are rejected.",
+            "import_run_preset": "Run preset import",
+            "import_run_url": "Fetch and import",
+            "import_paste_label": "Domain list",
+            "import_paste_placeholder": "mailinator.com\ntemporary-mail.net\n…",
+            "import_paste_hint": "Up to about 2 MB of text. Bulk rows are validated the same way as manual entries.",
+            "import_run_paste": "Import from clipboard",
+            "import_cancel": "Close",
+            "import_url_required": "Enter a URL to fetch.",
+            "import_paste_required": "Paste at least one line to import.",
+            "source_manual": "Manual",
+            "source_preset": "Preset",
+            "source_import": "URL / paste",
+            "search_placeholder": "Search domains…",
+            "search": "Search",
+            "search_debouncing": "Updating filters…",
+            "domains_summary": "{total} domains (current filter)",
+            "section_enforcement_title": "Enforcement",
+            "section_enforcement_subtitle": "Toggle whether the list below is applied at signup and email changes",
+            "section_quick_add_title": "Add domain",
+            "section_quick_add_subtitle": "Single entries are validated instantly",
+            "empty": "No blocked domains yet.",
+            "empty_hint": "Add domains above or run a bulk import.",
+            "empty_search_title": "No matching domains",
+            "empty_search_hint": "Try another search term or clear filters.",
+            "col_domain": "Domain",
+            "col_source": "Source",
+            "col_added": "Added",
+            "confirm_delete": "Remove {domain} from the blocklist?",
+            "pagination": "{total} domains · page {page} of {pages}",
+            "prev": "Previous",
+            "next": "Next",
+            "messages": {
+                "load_failed": "Failed to load blocked domains.",
+                "blocking_on": "Domain blocking is now enforced.",
+                "blocking_off": "Domain blocking is disabled.",
+                "toggle_failed": "Could not update the blocking setting.",
+                "added": "Domain added.",
+                "add_failed": "Could not add domain.",
+                "deleted": "Domain removed.",
+                "delete_failed": "Could not remove domain.",
+                "import_done": "Import finished: {inserted} new rows (skipped malformed lines: {skipped}).",
+                "import_failed": "Preset import failed.",
+                "import_url_failed": "URL import failed. Check the address, HTTP status, and that the URL is allowed (public hosts only).",
+                "import_text_failed": "Could not import pasted text."
+            }
+        },
         "pterodactyl_importer": {
             "title": "Pterodactyl Importer",
             "description": "Seamlessly migrate your data from Pterodactyl to FeatherPanel. Follow the guide below to import your servers, users, and nodes.",
@@ -5735,7 +7638,8 @@
                 "failed_load_key": "Failed to load API key details",
                 "failed_fetch_keys": "Failed to fetch API keys",
                 "key_created": "API key created successfully!",
-                "key_create_failed": "Failed to create API key"
+                "key_create_failed": "Failed to create API key",
+                "cheat_code_activated": "Cheat code activated: Prerequisites bypassed!"
             },
             "prerequisites": {
                 "title": "System Requirements",
@@ -5904,7 +7808,7 @@
         "node_databases": {
             "title": "Node Databases",
             "viewAndManage_node": "Managing databases for node: {node}",
-            "description": "These are databases that your users (clients) can create for their servers.",
+            "description": "These are databases that your users (clients) can create for their servers. Mark a host as “all nodes” or bind it to one Wings node servers only see hosts that match their node (or global hosts).",
             "search_placeholder": "Search by name, host or username...",
             "no_results": "No databases found",
             "create": "Add Database",
@@ -5919,14 +7823,15 @@
                 "delete_failed": "Failed to delete database",
                 "delete_confirm": "Are you sure you want to delete this database?",
                 "health_healthy": "Database is healthy",
-                "health_unhealthy": "Database is unhealthy"
+                "health_unhealthy": "Database is unhealthy",
+                "node_required": "Select which node this database host is for."
             },
             "table": {
                 "created": "Created"
             },
             "form": {
                 "create_title": "Add Database",
-                "create_description": "Add a new database to this node.",
+                "create_description": "Add a database host that users can provision from. Choose whether it applies to all nodes or only one.",
                 "edit_title": "Edit Database",
                 "edit_description": "Edit the selected database.",
                 "view_title": "View Database",
@@ -5946,18 +7851,27 @@
                 "username_placeholder": "root",
                 "password": "Password",
                 "password_placeholder": "Enter password",
+                "password_edit_hint": "Leave blank to keep the current password unchanged.",
                 "submit_create": "Create Database",
-                "submit_update": "Update Database"
+                "submit_update": "Update Database",
+                "node_assignment": "Availability",
+                "node_assignment_help": "Global hosts appear for every server. Node-only hosts are shown only to servers on that node, and new databases are created on that host.",
+                "node_assignment_all_nodes": "All nodes (global)",
+                "node_assignment_one_node": "Single node only",
+                "node_assignment_this_only": "This node only ({node})",
+                "select_node": "Select node…"
             },
             "status": {
                 "healthy": "Healthy",
                 "unhealthy": "Unhealthy",
-                "no_node": "No Node"
+                "no_node": "No Node",
+                "all_nodes": "All nodes",
+                "node_label": "Node: {name}"
             },
             "help": {
                 "about_databases": {
                     "title": "About Databases",
-                    "description": "These are databases that your users (clients) can create for their servers. Users can create multiple database types depending on the limits you set as the hosting owner. FeatherPanel supports a broad range of popular databases to fit many workloads."
+                    "description": "These entries are database hosts (MySQL/MariaDB/PostgreSQL) that customers attach to game servers. Use “all nodes” for a shared cluster anyone can use, or assign a host to one Wings node so workloads stay local to that machine."
                 }
             }
         },
@@ -6185,6 +8099,7 @@
                 "close": "Close",
                 "cancel": "Cancel",
                 "install": "Install",
+                "update_all": "Update All ({count})",
                 "select_all": "Select All",
                 "deselect_all": "Deselect All",
                 "dismiss": "Dismiss"
@@ -6297,6 +8212,9 @@
                 "install_failed": "Failed to install plugin",
                 "update_success": "Plugin updated successfully",
                 "update_failed": "Failed to update plugin",
+                "bulk_update_success": "{count} plugin(s) updated successfully",
+                "bulk_update_partial": "{success} plugin(s) updated, {failed} failed",
+                "bulk_update_failed": "Failed to update plugins",
                 "uninstall_success": "Plugin uninstalled",
                 "uninstall_failed": "Failed to uninstall plugin",
                 "save_success": "Settings saved successfully",
@@ -6355,7 +8273,10 @@
                 "import_failed": "Failed to import default English translations.",
                 "invalid_json": "Invalid JSON format. Please check your syntax.",
                 "uploaded": "Uploaded successfully.",
-                "upload_failed": "Failed to upload translation file."
+                "upload_failed": "Failed to upload translation file.",
+                "invalid_language_code": "Invalid language code. Use ISO 639-1 format (e.g., en, de, fr)",
+                "file_exists_opening": "Translation file \"{lang}.json\" already exists. Opening it for editing.",
+                "download_failed": "Failed to download translation file"
             },
             "help": {
                 "what_is": {
@@ -6457,10 +8378,20 @@
             "subtitle_realm": "Managing spells for realm: {realm}",
             "create": "Create Spell",
             "import": "Import Spell",
+            "import_dialog_description": "Select the realm where you want to import this spell.",
             "browse_marketplace": "Browse Marketplace",
             "viewall": "View All Spells",
             "search_placeholder": "Search by name, description, or author...",
             "no_results": "No spells found",
+            "order": {
+                "title": "Reorder spells",
+                "subtitle": "Use the arrows to set display order in this realm (shown when creating servers and picking a spell).",
+                "unsaved_changes": "You have unsaved changes",
+                "messages": {
+                    "saved": "Spell order saved successfully",
+                    "save_failed": "Failed to save spell order"
+                }
+            },
             "table": {},
             "tabs": {
                 "general": "General",
@@ -6483,6 +8414,12 @@
                 "update_url": "Update URL",
                 "banner_url": "Banner URL",
                 "banner_preview": "Preview:",
+                "loading_spell": "Loading spell...",
+                "basic_information": "Basic Information",
+                "docker_configuration": "Docker Configuration",
+                "server_features": "Server Features",
+                "server_configuration": "Server Configuration",
+                "installation_startup_scripts": "Installation & Startup Scripts",
                 "docker_images": "Docker Images",
                 "add_docker_image": "Add Docker Image",
                 "script_container": "Script Container",
@@ -6545,6 +8482,9 @@
                 "delete_confirm": "Are you sure you want to delete this spell?",
                 "imported": "Spell imported successfully",
                 "import_failed": "Failed to import spell",
+                "select_realm": "Please select a realm",
+                "no_file_selected": "No file selected",
+                "name_realm_required": "Name and Realm are required",
                 "export_failed": "Failed to export spell",
                 "variable_created": "Variable created successfully",
                 "variable_updated": "Variable updated successfully",
@@ -6601,6 +8541,8 @@
                 "subject": "Subject",
                 "body": "Body (HTML)",
                 "html_help": "You can use HTML tags like <h1>, <p>, <strong>, <em>, <a>, etc.",
+                "editor": "Editor",
+                "live_preview": "Live Preview",
                 "submit_create": "Create Template",
                 "submit_update": "Update Template",
                 "send": "Send to All Users",
@@ -6654,6 +8596,21 @@
                 "max_tokens_description": "Maximum tokens in responses (1-8192)",
                 "max_history": "Max History",
                 "max_history_description": "Previous messages in context (1-50)",
+                "api_key": "API Key",
+                "api_key_placeholder": "Enter API key to change",
+                "model": "Model",
+                "base_url": "Base URL",
+                "grok_api_key": "xAI (Grok) API Key",
+                "grok_model": "xAI (Grok) Model",
+                "providers": {
+                    "basic": "Basic (No AI)",
+                    "google_gemini": "Google Gemini",
+                    "openai": "OpenAI",
+                    "openrouter": "OpenRouter",
+                    "ollama": "Ollama (Self-hosted)",
+                    "grok": "Grok (xAI)",
+                    "perplexity": "Perplexity"
+                },
                 "system_prompt_core": "AI Core System Prompt",
                 "system_prompt_core_readonly": "Core System Prompt (Read-Only)",
                 "system_prompt_core_description": "The core system prompt that defines the AI assistant's behavior and capabilities. This is read-only and loaded from the system configuration.",
@@ -6676,6 +8633,18 @@
         "subdomains": {
             "title": "Global Subdomains",
             "description": "Manage the global domains and their SRV mappings for the subdomain system.",
+            "featureEnabledAlertTitle": "User subdomains are enabled",
+            "featureEnabledAlertBody": "Panel settings allow users to create subdomains for their game servers. All of that traffic goes through the Cloudflare integration on this page. Configure the Cloudflare email and API key below, add at least one domain, and set spell mappings or users will see errors when they try to use subdomains.",
+            "featureEnabledAlertIncomplete": "Cloudflare email or API key is missing or incomplete. Save valid credentials in the section below so DNS updates can run.",
+            "featureEnabledAlertCta": "Open Cloudflare settings",
+            "featureDisabledAlertTitle": "User-made subdomains are turned off",
+            "featureDisabledAlertBody": "Under Admin → Settings → Servers, \"Allow users to create and manage server subdomains\" is disabled. Clients will not see subdomain options until you enable it here or in Settings. You can still configure Cloudflare and domains below so everything is ready when you turn it on.",
+            "featureDisabledOpenSettings": "Open Admin Settings (Servers)",
+            "userSubdomainsToggleLabel": "Allow users to create and manage server subdomains",
+            "userSubdomainsToggleHint": "Same switch as in Admin → Settings → Servers.",
+            "userSubdomainsEnabledToast": "User subdomains are now enabled for clients.",
+            "userSubdomainsDisabledToast": "User subdomains are now disabled for clients.",
+            "userSubdomainsToggleFailed": "Could not update subdomain permission. Try again or use Admin Settings.",
             "newDomain": "New Domain",
             "searchPlaceholder": "Search domains...",
             "statusActive": "Active",
@@ -6731,7 +8700,22 @@
             "save": "Save Changes",
             "domainDetailsTitle": "Subdomain Entries: {domain}",
             "domainDetailsDescription": "Active subdomains currently assigned to servers under this domain.",
-            "noSubdomains": "No active subdomains found under this domain."
+            "viewEntries": "View entries",
+            "noSubdomains": "No active subdomains found under this domain.",
+            "messages": {
+                "fetch_domains_failed": "Failed to fetch domains.",
+                "load_settings_failed": "Failed to load global settings.",
+                "cloudflare_settings_saved": "Cloudflare settings updated successfully.",
+                "save_settings_failed": "Failed to save settings.",
+                "domain_created": "Domain created successfully.",
+                "domain_updated": "Domain updated successfully.",
+                "domain_save_failed": "Failed to save domain configuration.",
+                "domain_deleted": "Domain deleted successfully.",
+                "domain_delete_failed": "Failed to delete domain.",
+                "domain_details_failed": "Failed to load domain details.",
+                "subdomain_list_failed": "Failed to load subdomain list.",
+                "create_spell_first": "Please create a spell first in the Spells section."
+            }
         },
         "featherzerotrust": {
             "title": "FeatherZeroTrust",
@@ -6779,6 +8763,7 @@
             },
             "hashes": {
                 "addHash": "Add Hash",
+                "importMalwareBazaar": "Import MalwareBazaar",
                 "checkHashes": "Check Hashes",
                 "confirmedOnly": "Confirmed Only",
                 "refresh": "Refresh",
@@ -6808,6 +8793,9 @@
                 "checkHashesDesc": "Bulk check file signatures against known threats",
                 "hashList": "Hash List (one per line)",
                 "checkButton": "Start Comparison",
+                "searchPlaceholder": "Search by hash, file name or detection type...",
+                "noResultsFor": "No results for \"{query}\"",
+                "emptyDatabase": "The suspicious file hash database is empty.",
                 "stats": {
                     "total": "Total Hashes",
                     "totalDesc": "All records",
@@ -6825,8 +8813,13 @@
                     "suspicious": "Suspicious",
                     "virus": "Virus",
                     "trojan": "Trojan",
+                    "malware": "Malware",
                     "miner": "Miner",
                     "backdoor": "Backdoor"
+                },
+                "checkResults": {
+                    "threatFound": "THREAT FOUND",
+                    "clear": "CLEAR"
                 },
                 "messages": {
                     "hashRequired": "Hash and file name are required",
@@ -6845,16 +8838,26 @@
                     "confirmFailed": "Failed to confirm hash",
                     "deleteFailed": "Failed to delete hash",
                     "bulkConfirmFailed": "Failed to bulk confirm hashes",
-                    "bulkDeleteFailed": "Failed to bulk delete hashes"
+                    "bulkDeleteFailed": "Failed to bulk delete hashes",
+                    "confirmDeleteSingle": "Are you sure you want to delete this hash?",
+                    "confirmBulkConfirm": "Confirm {count} hashes as malicious?",
+                    "confirmBulkDelete": "Delete {count} hashes?",
+                    "importConfirm": "Import recent suspicious hashes from MalwareBazaar now?",
+                    "importCompleted": "MalwareBazaar import complete. Imported {imported}, skipped {skipped}, failed {failed}.",
+                    "importFailed": "Failed to import hashes from MalwareBazaar."
                 }
             },
             "logs": {
                 "noLogs": "No execution logs found",
                 "emptyDescription": "Cron job execution history will appear here once scans are performed.",
                 "execution": "Execution",
+                "executionDetails": "Execution Details",
+                "executionDetailsDescription": "Detailed scan results for execution ID: {id}",
                 "startedAt": "Started at",
                 "servers": "Servers",
+                "totalServers": "Total Servers",
                 "detections": "Detections",
+                "totalDetections": "Total Detections",
                 "completed": "Completed",
                 "inProgress": "In Progress",
                 "viewDetails": "View Details",
@@ -6903,12 +8906,46 @@
                 "highCpuThreshold": "High CPU Threshold (0-1)",
                 "highNetwork": "High Network (bytes)",
                 "smallVolumeSize": "Small Volume Size (MB)",
+                "malwarebazaar": {
+                    "title": "MalwareBazaar Integration",
+                    "enable": "Enable MalwareBazaar Import",
+                    "enableDesc": "Allow importing suspicious hashes from MalwareBazaar into FeatherZeroTrust.",
+                    "apiKey": "MalwareBazaar API Key (optional)",
+                    "apiKeyPlaceholder": "Auth-Key value (optional)",
+                    "apiKeyDesc": "Leave empty if your usage does not require authentication.",
+                    "selector": "Recent Selector",
+                    "selectorOptions": {
+                        "latest100": "100 (latest 100 samples)",
+                        "lastHour": "time (last hour)"
+                    },
+                    "selectorDesc": "Only supported values are `100` and `time`.",
+                    "importLimit": "Default Import Limit",
+                    "importLimitPlaceholder": "100",
+                    "importLimitDesc": "Number of samples pulled per import request (1-1000).",
+                    "defaultDetectionType": "Default Detection Type Fallback",
+                    "defaultDetectionTypePlaceholder": "malware",
+                    "defaultDetectionTypeDesc": "Used when a sample has no signature.",
+                    "maxAgeHours": "Max Sample Age (hours)",
+                    "maxAgeHoursPlaceholder": "0",
+                    "maxAgeHoursDesc": "0 means no age filter.",
+                    "allowedFileTypes": "Allowed File Types (optional)",
+                    "allowedFileTypesPlaceholder": "exe, dll, jar",
+                    "allowedFileTypesDesc": "If set, only these MalwareBazaar `file_type` values are imported.",
+                    "blockedTags": "Blocked Tags (optional)",
+                    "blockedTagsPlaceholder": "ransomware, apt",
+                    "blockedTagsDesc": "Samples containing these tags are skipped.",
+                    "autoConfirm": "Auto-confirm Imported Hashes",
+                    "autoConfirmDesc": "Mark every imported hash as confirmed malicious.",
+                    "requireSignature": "Require Signature",
+                    "requireSignatureDesc": "Skip entries that do not have a MalwareBazaar signature."
+                },
                 "messages": {
                     "loadFailed": "Failed to load configuration",
                     "saved": "Configuration saved successfully",
                     "saveFailed": "Failed to save configuration",
                     "reset": "Configuration reset to defaults",
-                    "resetFailed": "Failed to reset configuration"
+                    "resetFailed": "Failed to reset configuration",
+                    "resetConfirm": "Are you sure you want to reset all configuration to defaults?"
                 }
             }
         }
@@ -6929,6 +8966,9 @@
     "vds": {
         "activities": {
             "description": "All power, subuser and console actions for this VDS instance.",
+            "fetch_failed": "Failed to fetch activity log",
+            "permission_denied": "You do not have permission to view this activity log",
+            "payload_copied": "Payload copied",
             "filter": {
                 "reinstall": "Reinstall events"
             }
@@ -7010,6 +9050,18 @@
             "description": "Manage user access and permissions for this VDS instance.",
             "add": "Add Subuser",
             "email_placeholder": "User email address",
+            "no_subusers": "No Subusers",
+            "remove": "Remove Subuser",
+            "edit_permissions": "Edit Permissions",
+            "owner_only": "Only the VM owner can manage subusers.",
+            "fetch_failed": "Failed to fetch subusers",
+            "select_permission": "Select at least one permission.",
+            "added": "Subuser added successfully.",
+            "add_failed": "Failed to add subuser.",
+            "removed": "Subuser removed.",
+            "remove_failed": "Failed to remove subuser.",
+            "permissions_updated": "Permissions updated.",
+            "permissions_update_failed": "Failed to update permissions.",
             "permissions": {
                 "power": {
                     "label": "Power Control",
@@ -7071,6 +9123,16 @@
         },
         "settings": {
             "title": "VDS Settings",
+            "description": "Manage your VDS instance settings and reinstall options.",
+            "loading": "Loading VDS settings…",
+            "access_denied": "You do not have permission to access VDS settings.",
+            "instance_info": {
+                "title": "Instance Info",
+                "hostname": "Hostname",
+                "vmid": "VMID",
+                "type": "Type",
+                "node": "Node"
+            },
             "reinstall": {
                 "title": "Reinstall Operating System",
                 "description": "This will permanently wipe the current OS and reinstall from a chosen template. All data on the VDS will be lost.",
@@ -7093,7 +9155,15 @@
                     "ssh_keys_placeholder": "Paste SSH public key(s) here..."
                 },
                 "cancel_button": "Cancel",
-                "confirm_button": "Confirm Reinstall"
+                "confirm_button": "Confirm Reinstall",
+                "select_template_first": "Please select a template first.",
+                "initiating": "Initiating reinstall…",
+                "start_failed": "Failed to start reinstall.",
+                "missing_id": "Reinstall did not return a reinstall_id",
+                "started": "Reinstall initiated. This may take several minutes.",
+                "timeout": "Reinstall timed out waiting for completion",
+                "success": "VDS reinstalled successfully.",
+                "failed": "Reinstall failed"
             },
             "hardware": {
                 "title": "QEMU Hardware (EFI / TPM)",
@@ -7136,6 +9206,9 @@
                 "toast_unmounted": "ISO unmounted successfully.",
                 "toast_unmount_failed": "Failed to unmount ISO.",
                 "toast_fetch_failed": "Failed to fetch ISO.",
+                "toast_queue_failed": "Failed to queue ISO task.",
+                "toast_fetch_queued": "ISO fetch queued.",
+                "fetch_timeout": "ISO fetch timed out",
                 "errors": {
                     "iso_file_required": "Select an ISO file",
                     "storage_required": "Select an ISO storage",
@@ -7235,6 +9308,54 @@
         "pressEnterToSend": "Press Enter to send, Shift+Enter for new line",
         "conversations": "Conversations",
         "closeChat": "Close chat",
-        "toggleSidebar": "Toggle sidebar"
+        "welcomeVds": "Hi {name}! 👋 I'm your FeatherPanel VDS AI. I can help you manage your virtual servers — check status, control power, manage backups, and more!",
+        "you": "You",
+        "toolActionSuccess": "Action '{action}' completed successfully",
+        "toolActionFailed": "Action '{action}' failed",
+        "toggleSidebar": "Toggle sidebar",
+        "welcomeDashboard": "Hi {name}! I'm your FeatherPanel Dashboard AI. I can help you find servers, manage VDS instances, navigate the dashboard, and look up knowledgebase articles when you ask.",
+        "commandsHint": "Type /help for commands.",
+        "availableCommands": "Available commands:\n\n- `/help` or `/commands` - show chatbot commands\n- `/context` - show current chat mode, route, and context limits\n- `/compact` - compact the visible conversation locally\n- `/clear` - start a fresh chat",
+        "contextCommand": "Current context:\n\n- Mode: {mode}\n- Route: {route}\n- History sent to AI: compacted server-side, recent turns only\n- Server/VDS/KB details: fetched with tools only when needed\n- Logs: not included unless troubleshooting is requested",
+        "compactCommand": "Compacted the visible conversation. Future requests already use server-side compact memory and recent turns.",
+        "unknownCommand": "Unknown command: `{command}`.\n\nType `/help` to see available commands.",
+        "tokenUsageAssistant": "{total} tokens",
+        "tokenUsageAssistantDetails": "Input {input} / Output {output} / Total {total} tokens",
+        "tokenUsageUser": "{count} tokens",
+        "tokenUsageUserDetails": "{count} input tokens",
+        "callingTool": "Calling {tool}",
+        "toolFinished": "{tool} finished",
+        "toolFailed": "{tool} failed",
+        "toolRunning": "Running",
+        "toolDone": "Done",
+        "toolFailedShort": "Failed",
+        "toolRunningSummary": "Running...",
+        "online": "Online",
+        "readyToHelp": "Ready to help",
+        "assistant": "Assistant",
+        "slashCommands": "Commands",
+        "commandHelpTitle": "Help",
+        "commandHelpDescription": "Show every available chatbot command.",
+        "commandContextTitle": "Context",
+        "commandContextDescription": "Show the current chat mode, route, and context limits.",
+        "commandCompactTitle": "Compact",
+        "commandCompactDescription": "Compact the visible conversation into a short local summary.",
+        "commandClearTitle": "Clear",
+        "commandClearDescription": "Start a fresh chat locally.",
+        "commandNoMatches": "No matching commands",
+        "plannedAction": "Planned action",
+        "actionRestartServer": "Restart server",
+        "actionStartServer": "Start server",
+        "actionStopServer": "Stop server",
+        "actionKillServer": "Kill server",
+        "actionSendCommand": "Send command",
+        "actionNavigate": "Navigate",
+        "waitingForConfirmation": "Waiting for confirmation",
+        "typing": "Writing response",
+        "checkingActions": "Checking planned actions",
+        "moreInfo": "More info",
+        "toolsUsed": "Tools and actions used",
+        "showDetails": "Show details",
+        "hideDetails": "Hide details"
     }
 }
