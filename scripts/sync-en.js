@@ -5,7 +5,8 @@ const os = require('os');
 
 const languagesDir = path.join(__dirname, '..', 'languages');
 const enFile = path.join(languagesDir, 'en.json');
-const upstreamUrl = 'https://raw.githubusercontent.com/MythicalLTD/FeatherPanel/main/frontendv2/public/locales/en.json';
+//const upstreamUrl = 'https://raw.githubusercontent.com/MythicalLTD/FeatherPanel/develop/frontendv2/public/locales/en.json';
+const upstreamUrl = 'https://raw.githubusercontent.com/MythicalLTD/FeatherPanel/refs/heads/develop/frontendv2/public/locales/en.json';
 
 function downloadFile(url, filePath) {
   return new Promise((resolve, reject) => {
