@@ -196,13 +196,14 @@
         },
         "nav": {
             "status": "Status",
-            "knowledgebase": "Wissensdatenbank"
+            "knowledgebase": "Wissensdatenbank",
+            "plans": ""
         }
     },
     "nodeStatus": {
         "servers": {
-            "title": "Servers ({count})",
-            "empty": ""
+            "title": "Server ({count})",
+            "empty": "Keine Server auf dieser Node"
         }
     },
     "errors": {
@@ -598,6 +599,32 @@
             "success": "Datenanforderung erfolgreich erstellt",
             "failed": "Datenanforderung konnte nicht erstellt werden",
             "ticketSystemDisabled": "Das Ticketsystem ist derzeit deaktiviert"
+        },
+        "deleteAccount": {
+            "title": "",
+            "description": "",
+            "pendingDescription": "",
+            "scheduledAt": "",
+            "button": "",
+            "cancelButton": "",
+            "confirmTitle": "",
+            "confirmDescription": "",
+            "confirmButton": "",
+            "confirmPhrase": "",
+            "confirmPhrasePlaceholder": "",
+            "twoFaCode": "",
+            "twoFaCodePlaceholder": "",
+            "twoFaRequired": "",
+            "emailOtp": "",
+            "emailOtpPlaceholder": "",
+            "sendOtp": "",
+            "otpSent": "",
+            "otpFailed": "",
+            "successDeleted": "",
+            "successScheduled": "",
+            "failed": "",
+            "cancelSuccess": "",
+            "cancelFailed": ""
         },
         "sshKeys": {
             "title": "SSH-Schlüssel",
@@ -1325,7 +1352,7 @@
             "vmInstances": "VM-Instanzen",
             "nodeDatabases": "Knotendatenbanken",
             "nodeStatus": "Knotenstatus",
-            "mounts": "Reittiere",
+            "mounts": "Mounts",
             "subdomains": "Subdomains",
             "realms": "Reiche (Nester)",
             "spells": "Zauber (Eier)",
@@ -1344,6 +1371,7 @@
             "ldapProviders": "LDAP-Anbieter",
             "rateLimits": "Ratenbeschränkungen",
             "blockedEmailDomains": "Blockierte E-Mail-Domänen",
+            "abuseipdb": "",
             "databaseManagement": "Datenbankverwaltung",
             "storageSense": "Speichersinn",
             "pterodactylImporter": "Pterodaktylus-Importeur",
@@ -1352,7 +1380,12 @@
             "devPlugins": "Entwickler-Plugins",
             "logViewer": "Protokollbetrachter",
             "marketplace": "Marktplatz",
+            "panelMarketplace": "",
             "cloudManagement": "Cloud-Management",
+            "cloudConnections": "Cloud Verbindungen",
+            "myFeatherPanel": "MeinFeatherPanel",
+            "reportIssue": "",
+            "suggestFeature": "",
             "knowledgebase": "Wissensdatenbank",
             "knowledgebase_categories": "Kategorien",
             "knowledgebase_articles": "Artikel",
@@ -2632,9 +2665,13 @@
         "pipelineLabel": "",
         "taskTypes": {
             "containerCommand": "Containerbefehl",
+            "containerShell": "",
             "discordWebhook": "Discord Webhook",
-            "httpRequest": "HTTP-Anfrage"
+            "httpRequest": "HTTP-Anfrage",
+            "sleep": ""
         },
+        "sleepSummary": "",
+        "shellTimeoutSummary": "",
         "discord": {
             "embedBuilder": "Builder einbetten",
             "livePreview": "Live-Vorschau",
@@ -2674,6 +2711,13 @@
         "form": {
             "taskType": "Aufgabentyp",
             "command": "Befehl",
+            "containerCommandHint": "",
+            "shellCommand": "",
+            "shellCommandPlaceholder": "",
+            "containerShellHint": "",
+            "containerShellDisabledHint": "",
+            "shellTimeout": "",
+            "shellTimeoutHint": "",
             "webhookUrl": "Webhook-URL",
             "content": "Inhalt",
             "usernameOptional": "Benutzername (optional)",
@@ -2682,6 +2726,8 @@
             "headersJson": "Header (JSON-Objekt)",
             "queryParamsJson": "Abfrageparameter (JSON-Objekt)",
             "bodyOptional": "Körper (optional)",
+            "sleepSeconds": "",
+            "sleepSecondsHint": "",
             "failureBehavior": "Fehlerverhalten",
             "stopOnFailure": "Stoppen Sie die Pipeline bei einem Fehler",
             "continueOnFailure": "Setzen Sie die Pipeline bei einem Fehler fort",
@@ -2694,8 +2740,12 @@
             "importFailed": "Lebenszyklus-Hooks konnten nicht importiert werden",
             "importInvalid": "Ungültige Lebenszyklus-Hook-Importdatei",
             "commandRequired": "Befehl ist erforderlich",
+            "shellCommandRequired": "",
+            "shellTimeoutInvalid": "",
+            "shellDisabled": "",
             "webhookUrlRequired": "Webhook-URL ist erforderlich",
             "urlRequired": "URL ist erforderlich",
+            "sleepSecondsInvalid": "",
             "invalidJson": "Header und Abfrageparameter müssen gültige JSON-Objekte sein",
             "discordNeedsContentOrEmbed": "Geben Sie den Nachrichteninhalt oder mindestens eine nicht leere Einbettung an.",
             "hookEnabled": "Lifecycle-Hook aktiviert",
@@ -3848,6 +3898,42 @@
                 "chargeback": "Rückbuchung oder Betrug",
                 "manual_review": "Manuelle Überprüfung erforderlich",
                 "other": "Andere"
+            }
+        },
+        "abuseipdb": {
+            "title": "",
+            "description": "",
+            "open_settings": "",
+            "status_title": "",
+            "status_failed": "",
+            "status_configured": "",
+            "status_not_configured": "",
+            "status_summary": "",
+            "not_configured": "",
+            "scan_title": "",
+            "min_score": "",
+            "max_age_days": "",
+            "start_scan": "",
+            "scanning": "",
+            "scan_failed": "",
+            "scan_complete": "",
+            "scan_progress": "",
+            "rate_limited": "",
+            "no_results_title": "",
+            "no_results_description": "",
+            "check_title": "",
+            "check_placeholder": "",
+            "check_button": "",
+            "check_failed": "",
+            "ip_required": "",
+            "ban": {
+                "report_label": "",
+                "report_help": "",
+                "category_label": "",
+                "category_placeholder": "",
+                "category_required": "",
+                "report_success": "",
+                "report_failed": ""
             }
         },
         "affiliates": {
@@ -5502,16 +5588,16 @@
             }
         },
         "mounts": {
-            "title": "Reittiere",
+            "title": "Mounts",
             "description": "Definieren Sie Host-Ordner, die Wings in Container einbinden können. Verknüpfen Sie jedes Mount mit Knoten für Wings-allowed_mounts, beschränken Sie es optional nach Zauber und aktivieren Sie es dann pro Server.",
-            "create": "Halterung erstellen",
+            "create": "Mount erstellen",
             "search_placeholder": "Nach Name oder Pfad suchen…",
-            "no_results": "Keine Halterungen definiert",
+            "no_results": "Keine Mounts definiert",
             "columns": {
                 "name": "Name",
                 "paths": "Quelle → Ziel",
                 "nodes": "Node",
-                "spells": "Zauber",
+                "spells": "Spells",
                 "read_only": "Zugang"
             },
             "read_only": "Schreibgeschützt",
@@ -5526,15 +5612,15 @@
                 "user_mountable_help": "Wenn diese Option aktiviert ist, können Endbenutzer diese Bereitstellung an ihre eigenen Server anschließen, wo auch immer Ihr Panel Bereitstellungen bereitstellt (Client-API/Benutzeroberfläche). Deaktiviert = Administratoren weisen nur Mounts zu. Standardmäßig aktiviert für neue Reittiere, passend zum Pelikan.",
                 "description": "Beschreibung"
             },
-            "drawer_create_title": "Neue Halterung",
-            "drawer_edit_title": "Halterung bearbeiten",
+            "drawer_create_title": "Neuer Mount",
+            "drawer_edit_title": "Mount bearbeiten",
             "form_required": "Name, Quellpfad und Zielpfad sind erforderlich.",
-            "links_filter_placeholder": "Knoten oder Zauber filtern…",
+            "links_filter_placeholder": "Nodes oder Spells filtern…",
             "links_nodes_filter_placeholder": "Node filtern…",
-            "links_spells_filter_placeholder": "Zauber filtern…",
-            "links_atomic_failed": "Knoten- und Zauberlinks für dieses Reittier konnten nicht gespeichert werden.",
-            "links_nodes_failed": "Knotenverknüpfungen für diesen Mount konnten nicht gespeichert werden.",
-            "links_spells_failed": "Knotenverknüpfungen wurden gespeichert, aber das Speichern von Zauberverknüpfungen ist fehlgeschlagen. Öffnen Sie den Editor erneut, um es erneut zu versuchen.",
+            "links_spells_filter_placeholder": "Spells filtern…",
+            "links_atomic_failed": "Node- und Spell-Links für diesen Mount konnten nicht gespeichert werden.",
+            "links_nodes_failed": "Nodeverknüpfungen für diesen Mount konnten nicht gespeichert werden.",
+            "links_spells_failed": "Nodeverknüpfungen wurden gespeichert, aber das Speichern von Zauberverknüpfungen ist fehlgeschlagen. Öffnen Sie den Editor erneut, um es erneut zu versuchen.",
             "links": {
                 "nodes": "Node (erforderlich für Wings-Zulassungsliste)",
                 "spells": "Zauber (leer = alle Zauber)",
@@ -5621,7 +5707,7 @@
                     "skip_scripts": "Skripte überspringen:",
                     "oom_disabled": "OOM deaktiviert:",
                     "memory": "Erinnerung:",
-                    "swap": "Tauschen:",
+                    "swap": "Swap:",
                     "disk": "Datenträger:",
                     "cpu": "CPU:",
                     "io": "IO:",
@@ -5780,7 +5866,7 @@
                 "spell_default_docker_image": "Zauberstandard",
                 "memory": "Speicher (MiB)",
                 "memory_help": "Die maximal zulässige Speichermenge für diesen Container. Wenn Sie diesen Wert auf 0 setzen, ist eine unbegrenzte Speichernutzung möglich.",
-                "swap": "Tauschen (MiB)",
+                "swap": "Swap (MiB)",
                 "swap_help": "Wenn Sie diesen Wert auf 0 setzen, wird der Swap-Speicherplatz auf diesem Server deaktiviert. Durch die Einstellung -1 ist ein unbegrenzter Austausch möglich.",
                 "disk": "Speicherplatz (MiB)",
                 "disk_help": "Der maximal zulässige Speicherplatz für diesen Container. Wenn Sie diesen Wert auf 0 setzen, ist eine unbegrenzte Festplattennutzung möglich.",
@@ -5891,7 +5977,7 @@
                     "application": "Bewerbung",
                     "limits": "Grenzen",
                     "startup": "Start",
-                    "mounts": "Reittiere",
+                    "mounts": "Mounts",
                     "allocations": "Zuweisungen",
                     "actions": "Aktionen"
                 },
@@ -5933,7 +6019,7 @@
                     "available_variables": "Verfügbare Variablen:"
                 },
                 "mounts": {
-                    "title": "Reittiere binden",
+                    "title": "Mounts binden",
                     "description": "Mounten Sie Hostverzeichnisse in diesen Servercontainer (wie Pelican-Mounts). Der Knoten muss den Quellpfad zulassen; Speichern, um Wings zu synchronisieren.",
                     "empty": "Für diesen Knoten und Zauber sind keine Reittiere verfügbar. Erstellen Sie Reittiere unter Admin → Reittiere und verknüpfen Sie sie mit diesem Knoten (und mit diesem Zauber, wenn Sie die Einschränkung auf Zauber beschränken).",
                     "loading": "Reittiere werden geladen…",
@@ -5972,6 +6058,19 @@
                     "suspend_failed": "Der Server konnte nicht angehalten werden",
                     "unsuspend_success": "Der Server wurde erfolgreich aufgehoben",
                     "unsuspend_failed": "Die Suspendierung des Servers konnte nicht aufgehoben werden",
+                    "warn_title": "",
+                    "warn_description": "",
+                    "warn": "",
+                    "warn_confirm_title": "",
+                    "warn_confirm_description": "",
+                    "warn_title_label": "",
+                    "warn_message_label": "",
+                    "warn_message_placeholder": "",
+                    "warn_default_title": "",
+                    "warn_send_email": "",
+                    "warn_required": "",
+                    "warn_success": "",
+                    "warn_failed": "",
                     "delete_title": "Server löschen",
                     "delete_description": "Löschen Sie diesen Server und alle zugehörigen Daten dauerhaft",
                     "delete": "Server löschen",
@@ -6155,7 +6254,7 @@
                 "form": {
                     "name": "Name",
                     "color": "Farbe",
-                    "sortOrder": "Level",
+                    "sortOrder": "",
                     "sortOrderDescription": "",
                     "isDefault": "",
                     "isDefaultDescription": ""
@@ -6283,7 +6382,20 @@
             "update_description": "Sicherheitspatches und Leistungsoptimierungen",
             "update_now": "System jetzt aktualisieren",
             "recommended_php": "Empfohlene PHP-Version:",
+            "running_php": "",
+            "release_name": "",
+            "security_release": "",
+            "latest_build": "",
+            "view_on_github": "",
+            "no_releases_yet": "",
             "view_changelog": "Detailliertes Änderungsprotokoll anzeigen",
+            "changelog_tab_current": "",
+            "changelog_tab_latest": "",
+            "changelog_both_hint": "",
+            "release_notes_for": "",
+            "release_summary": "",
+            "published_at": "",
+            "no_changelog_entries": "",
             "verify_integrity": "Überprüfen Sie die Integrität",
             "integrity_modal_title": "Dateiintegritätsscan",
             "integrity_modal_desc": "SHA-256-Hashes des Kern-Backend-Codes (App-Baum, public/index.php, Composer-Metadaten). Vergleichen Sie die Ergebnisse mit einer auf dem Server gespeicherten Basislinie nach einem bekanntermaßen guten Zustand.",
@@ -6902,16 +7014,38 @@
             "subtitle": "Verbinden Sie Ihre FeatherPanel-Instanz mithilfe sicherer Anmeldeinformationen mit FeatherCloud",
             "refresh_status": "Status aktualisieren",
             "rotate_keys": "Schlüssel drehen",
+            "connect_cta": "Verbinde Mythic Cloud",
             "link": "Link mit FeatherCloud",
             "relink": "Neu verknüpfen",
             "linking": "Verlinkung...",
+            "disconnect": "",
             "connection_status": {
+                "card_title": "",
                 "connected": "Verbunden mit FeatherCloud",
+                "connected_to": "",
                 "not_connected": "Nicht verbunden",
                 "connected_desc": "Ihr Panel wurde erfolgreich verknüpft. Sie können auf Premium-Plugins, FeatherAI und Cloud-Intelligence-Dienste zugreifen.",
                 "not_connected_desc": "Verknüpfen Sie Ihr Panel mit FeatherCloud, um auf Premium-Funktionen und Cloud-Dienste zuzugreifen.",
                 "active": "Aktiv",
-                "inactive": "Inaktiv"
+                "inactive": "Inaktiv",
+                "identity_only_hint": "",
+                "summary_ok": ""
+            },
+            "consent": {
+                "title": "",
+                "intro": "",
+                "granted_title": "",
+                "denied_title": "",
+                "acting_note": "",
+                "cancel": "",
+                "authorize": ""
+            },
+            "disconnect_dialog": {
+                "title": "",
+                "description": ""
+            },
+            "mapping": {
+                "unmapped_hint": ""
             },
             "credentials": {
                 "title": "Anmeldeinformationen",
@@ -6992,14 +7126,18 @@
                 "credentials_rotated": "Schlüssel gedreht. Verknüpfen Sie erneut mit FeatherCloud (OAuth), um den Cloud-API-Zugriff wiederherzustellen.",
                 "credentials_rotate_failed": "Cloud-Anmeldeinformationen konnten nicht rotiert werden",
                 "cloud_credentials_empty": "Cloud-Anmeldeinformationen sind leer. Premium-Plugins können erst heruntergeladen werden, wenn die FeatherCloud-Anmeldeinformationen konfiguriert sind.",
-                "oauth_link_failed": "Der OAuth2-Link konnte nicht generiert werden"
+                "oauth_link_failed": "Der OAuth2-Link konnte nicht generiert werden",
+                "disconnected": "",
+                "disconnect_failed": ""
             },
             "finish": {
                 "processing": "OAuth2-Rückruf wird verarbeitet...",
                 "success": "Erfolgreich verbunden!",
                 "failed": "Verbindung fehlgeschlagen",
+                "cancelled": "",
                 "processing_desc": "Bitte warten Sie, während wir Ihre Cloud-Anmeldeinformationen speichern...",
                 "success_desc": "Ihr Panel ist jetzt mit FeatherCloud verknüpft. Sie können jetzt auf Premium-Plugins, FeatherAI und Cloud-Intelligence-Dienste zugreifen.",
+                "cancelled_desc": "",
                 "linked_toast": "Ihr Panel wurde erfolgreich mit FeatherCloud verknüpft!",
                 "save_failed": "Cloud-Anmeldeinformationen konnten nicht gespeichert werden",
                 "missing_params": "Fehlende erforderliche Parameter: cloud_api_key und cloud_api_secret",
@@ -7302,6 +7440,11 @@
             "sticky": "Klebrig",
             "non_dismissible": "Nicht abweisbar",
             "not_sticky": "Nicht klebrig",
+            "target": {
+                "global": "",
+                "user": "",
+                "server": ""
+            },
             "types": {
                 "info": "Infos",
                 "warning": "Warnung",
@@ -7313,6 +7456,14 @@
                 "title": "Titel",
                 "type": "Typ",
                 "message": "Nachricht (Markdown)",
+                "audience": "",
+                "target_user": "",
+                "target_user_placeholder": "",
+                "selected_user": "",
+                "no_users": "",
+                "target_server": "",
+                "target_server_none": "",
+                "send_email": "",
                 "dismissible": "Ermöglichen Sie Benutzern das Schließen",
                 "sticky": "Klebrig (immer sichtbar)",
                 "create_title": "Benachrichtigung erstellen",
@@ -7331,7 +7482,8 @@
                 "update_failed": "Die Benachrichtigung konnte nicht aktualisiert werden",
                 "delete_failed": "Die Benachrichtigung konnte nicht gelöscht werden",
                 "delete_confirm": "Sind Sie sicher, dass Sie diese Benachrichtigung löschen möchten?",
-                "fetch_failed": "Benachrichtigungen konnten nicht abgerufen werden"
+                "fetch_failed": "Benachrichtigungen konnten nicht abgerufen werden",
+                "user_required": ""
             },
             "help": {
                 "alerts": {
@@ -7659,6 +7811,35 @@
                 "email_domain_blocking_enabled": {
                     "label": "E-Mail-Domain-Blockierung",
                     "description": "Blockieren Sie die Registrierung von bestimmten E-Mail-Domänen (konfiguriert in Blockierte E-Mail-Domänen)."
+                },
+                "abuseipdb_enabled": {
+                    "label": "",
+                    "description": ""
+                },
+                "abuseipdb_api_key": {
+                    "label": "",
+                    "description": ""
+                },
+                "abuseipdb_check_on_register": {
+                    "label": "",
+                    "description": ""
+                },
+                "abuseipdb_min_confidence_score": {
+                    "label": "",
+                    "description": ""
+                },
+                "abuseipdb_max_age_days": {
+                    "label": "",
+                    "description": ""
+                },
+                "abuseipdb_register_action": {
+                    "label": "",
+                    "description": "",
+                    "options": {
+                        "block": "",
+                        "log": "",
+                        "auto_ban": ""
+                    }
                 },
                 "telemetry": {
                     "label": "Telemetrie senden",
