@@ -363,11 +363,11 @@
         "password_mismatch": "Les mots de passe ne correspondent pas",
         "invalid_username": "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des underscores",
         "fill_all_fields": "Veuillez remplir tous les champs",
-        "first_name_length": "Le prénom doit contenir entre {min} et {max} caractères",
-        "last_name_length": "Le nom doit contenir entre {min} et {max} caractères",
-        "username_length": "Le nom d'utilisateur doit contenir entre {min} et {max} caractères",
-        "email_length": "L'email doit contenir entre {min} et {max} caractères",
-        "password_length": "Le mot de passe doit contenir entre {min} et {max} caractères",
+        "first_name_length": "Le prénom doit comporter entre {min} et {max} caractères",
+        "last_name_length": "Le nom doit comporter entre {min} et {max} caractères",
+        "username_length": "Le nom d'utilisateur doit comporter entre {min} et {max} caractères",
+        "email_length": "L'email doit comporter entre {min} et {max} caractères",
+        "password_length": "Le mot de passe doit comporter entre {min} et {max} caractères",
         "captcha_required": "Veuillez compléter la vérification CAPTCHA",
         "verification_code_6_digits": "Le code de vérification doit comporter 6 chiffres",
         "email_required": "L'email est requis"
@@ -961,13 +961,13 @@
                 "resources_title": "Ressources",
                 "network_rx": "Entrant",
                 "network_tx": "Sortant",
-                "disk_io_title": "",
-                "disk_io_read": "",
-                "disk_io_write": ""
+                "disk_io_title": "E/S du disque",
+                "disk_io_read": "Lecture",
+                "disk_io_write": "Écriture"
             },
             "performance": {
                 "network": "Réseau",
-                "disk_io": "",
+                "disk_io": "E/S du disque",
                 "no_data": "Aucune donnée",
                 "cpu_load": "Charge CPU"
             },
@@ -1397,7 +1397,7 @@
             "panelMarketplace": "Marketplace du panneau",
             "cloudManagement": "Gestion Cloud",
             "cloudConnections": "Connexions Cloud",
-            "featherpanelPremium": "",
+            "featherpanelPremium": "FeatherPanel Premium",
             "myFeatherPanel": "MonFeatherPanel",
             "reportIssue": "Signaler un problème",
             "suggestFeature": "Suggérer une nouveauté",
@@ -2810,9 +2810,9 @@
             "header_actions": "Actions",
             "empty_description": "Dossier vide.",
             "empty_title": "Aucun fichier",
-            "empty_search_title": "",
-            "empty_search_description": "",
-            "truncated": ""
+            "empty_search_title": "Aucun fichier correspondant",
+            "empty_search_description": "Aucun fichier dans ce dossier ne correspond à votre recherche.",
+            "truncated": "Affichage de {shown} éléments sur {total}. Pour trouver des fichiers au-delà de cette limite, veuillez utiliser la fonction de recherche."
         },
         "trash": {
             "title": "Corbeille",
@@ -2980,267 +2980,267 @@
         },
         "editors": {
             "minecraftProperties": {
-                "title": "",
-                "description": "",
+                "title": "Propriétés du serveur Minecraft",
+                "description": "Configurer visuellement les propriétés de votre serveur Minecraft",
                 "prompt": {
-                    "title": "",
-                    "description": "",
-                    "useGui": "",
-                    "stayRaw": ""
+                    "title": "Éditeur visuel disponible",
+                    "description": "Ce fichier peut être modifié à l'aide d'un éditeur visuel intuitif.",
+                    "useGui": "Utiliser l'éditeur visuel",
+                    "stayRaw": "Rester dans l'éditeur Raw"
                 },
                 "actions": {
-                    "save": "",
-                    "saving": "",
-                    "switchToRaw": ""
+                    "save": "Sauvegarder",
+                    "saving": "Sauvegarde",
+                    "switchToRaw": "Passer à l'éditeur RAW"
                 },
                 "fields": {
                     "motd": {
-                        "label": "",
-                        "description": ""
+                        "label": "Message du jour",
+                        "description": "Message affiché à la connexion du joueur"
                     },
                     "maxPlayers": {
-                        "label": "",
-                        "description": ""
+                        "label": "Nombre maximal de joueurs",
+                        "description": "Nombre maximal de joueurs autorisés sur le serveur"
                     },
                     "gamemode": {
-                        "label": "",
-                        "description": ""
+                        "label": "Gamemode",
+                        "description": "Mode de jeu par défaut pour les nouveaux joueurs"
                     },
                     "difficulty": {
-                        "label": "",
-                        "description": ""
+                        "label": "Difficulté",
+                        "description": "Niveau de difficulté du serveur"
                     },
                     "whiteList": {
-                        "label": "",
-                        "description": ""
+                        "label": "Liste blanche",
+                        "description": "Restreindre l'accès aux seuls joueurs présent sur la liste blanche"
                     },
                     "enforceWhitelist": {
-                        "label": "",
-                        "description": ""
+                        "label": "Appliquer la liste blanche",
+                        "description": "Expulsion automatique des joueurs absents de la liste blanche"
                     },
                     "onlineMode": {
-                        "label": "",
-                        "description": ""
+                        "label": "Mode en ligne",
+                        "description": "Vérification de la licence officielle des joueurs (à désactiver"
                     },
                     "pvp": {
-                        "label": "",
-                        "description": ""
+                        "label": "JcJ",
+                        "description": "Autorise les combats entre joueurs"
                     },
                     "enableCommandBlock": {
-                        "label": "",
-                        "description": ""
+                        "label": "Activer les blocs de commande",
+                        "description": "Active les blocs de commandes sur le serveur (utilisation réservée aux opérateurs)"
                     },
                     "allowFlight": {
-                        "label": "",
-                        "description": ""
+                        "label": "Autoriser le vol",
+                        "description": "Autorise les joueurs à voler"
                     },
                     "spawnMonsters": {
-                        "label": "",
-                        "description": ""
+                        "label": "Apparition de monstres",
+                        "description": "Autorise l'apparition des monstres"
                     },
                     "allowNether": {
-                        "label": "",
-                        "description": ""
+                        "label": "Autoriser le Nether",
+                        "description": "Autorise les joueurs à voyager dans la dimension du Nether"
                     },
                     "forceGamemode": {
-                        "label": "",
-                        "description": ""
+                        "label": "Imposition du mode de jeu",
+                        "description": "Force les joueurs à jouer au mode de jeu par défaut"
                     },
                     "broadcastConsoleToOps": {
-                        "label": "",
-                        "description": ""
+                        "label": "Console de diffusion aux opérateurs",
+                        "description": "Envoie les messages de la console aux opérateurs"
                     },
                     "spawnProtection": {
-                        "label": "",
-                        "description": ""
+                        "label": "Protection de l'apparition",
+                        "description": "Rayon, en blocs, de la protection de l'apparition (0 pour désactiver)"
                     },
                     "viewDistance": {
-                        "label": "",
-                        "description": ""
+                        "label": "Distance de vision",
+                        "description": "Distance maximale de rendu des blocs (3-32)"
                     },
                     "simulationDistance": {
-                        "label": "",
-                        "description": ""
+                        "label": "Distance de simulation",
+                        "description": "Distance maximale de simulation des blocs (3-32)"
                     },
                     "levelName": {
-                        "label": "",
-                        "description": ""
+                        "label": "Nom du monde",
+                        "description": "Nom de dossier du monde Minecraft"
                     },
                     "levelSeed": {
-                        "label": "",
-                        "description": ""
+                        "label": "Graine du monde",
+                        "description": "Graine pour la génération du monde (laisser vide pour une graine aléatoire)"
                     },
                     "generatorSettings": {
-                        "label": "",
-                        "description": ""
+                        "label": "Paramètres du générateur",
+                        "description": "Paramètres personnalisés du générateur (format JSON)"
                     },
                     "levelType": {
-                        "label": "",
-                        "description": ""
+                        "label": "Type de monde",
+                        "description": "Type de génération du monde"
                     },
                     "generateStructures": {
-                        "label": "",
-                        "description": ""
+                        "label": "Générer des structures",
+                        "description": "Générez des structures au sein du monde (Villages, Temples...)"
                     },
                     "hardcore": {
-                        "label": "",
-                        "description": ""
+                        "label": "Hardcore",
+                        "description": "Activer le mode Hardcore (mort irréversible du joueur)"
                     },
                     "requireResourcePack": {
-                        "label": "",
-                        "description": ""
+                        "label": "Pack de ressources requis",
+                        "description": "Force les joueurs à utiliser le Pack de Ressources du serveur"
                     },
                     "hideOnlinePlayers": {
-                        "label": "",
-                        "description": ""
+                        "label": "Masquer les joueurs en ligne",
+                        "description": "Masquerle nombre de joueurs affiché dans la liste des serveurs"
                     },
                     "enforceSecureProfile": {
-                        "label": "",
-                        "description": ""
+                        "label": "Appliquer le profil sécurisé",
+                        "description": "Exiger des signatures de profil sécurisées"
                     },
                     "previewsChat": {
-                        "label": "",
-                        "description": ""
+                        "label": "Aperçu du chat",
+                        "description": "Activer l'aperçu des messages du chat"
                     },
                     "useNativeTransport": {
-                        "label": "",
-                        "description": ""
+                        "label": "Utiliser le transport natif",
+                        "description": "Utilisez le transport réseau natif pour de meilleures performances"
                     },
                     "resourcePack": {
-                        "label": "",
-                        "description": ""
+                        "label": "Pack de ressources",
+                        "description": "URL du pack de ressources du serveur"
                     },
                     "resourcePackSha1": {
-                        "label": "",
-                        "description": ""
+                        "label": "SHA1 du pack de ressources",
+                        "description": "Hachage SHA1 du pack de ressources"
                     },
                     "resourcePackId": {
-                        "label": "",
-                        "description": ""
+                        "label": "Identifiant du pack de ressources",
+                        "description": "Identifiant unique pour le pack de ressources"
                     },
                     "resourcePackPrompt": {
-                        "label": "",
-                        "description": ""
+                        "label": "Phrase du pack de ressources",
+                        "description": "Message affiché aux joueurs à la connexion pour valider le téléchargement du pack de ressources du serveur"
                     },
                     "opPermissionLevel": {
-                        "label": "",
-                        "description": ""
+                        "label": "Niveau de permission opérateur",
+                        "description": "Niveau de permission des opérateurs du serveur (1-4)"
                     },
                     "functionPermissionLevel": {
-                        "label": "",
-                        "description": ""
+                        "label": "Niveau d'autorisation de fonction",
+                        "description": "Niveau d'autorisation requis pour utiliser les fonctions (1-4)"
                     },
                     "entityBroadcastRangePercentage": {
-                        "label": "",
-                        "description": ""
+                        "label": "Portée de diffusion de l'entité",
+                        "description": "Pourcentage de portée de diffusion de l'entité (0-500)"
                     },
                     "maxChainedNeighborUpdates": {
-                        "label": "",
-                        "description": ""
+                        "label": "Mises à jour de \"Max Chained Neighbor\"",
+                        "description": "Nombre maximal de mises à jour de blocs chaînées (-1 pour illimité)"
                     },
                     "maxWorldSize": {
-                        "label": "",
-                        "description": ""
+                        "label": "Taille maximale du monde",
+                        "description": "Taille maximale du monde (en blocs)"
                     },
                     "serverName": {
-                        "label": "",
-                        "description": ""
+                        "label": "Nom du serveur",
+                        "description": "Nom interne du serveur utilisé pour la connexion"
                     },
                     "serverIp": {
-                        "label": "",
-                        "description": ""
+                        "label": "Adresse IP du serveur",
+                        "description": "Adresse IP du serveur (laisser vide pour laisser accessible depuis toutes les interfaces)"
                     },
                     "serverPort": {
-                        "label": "",
-                        "description": ""
+                        "label": "Port du serveur",
+                        "description": "Port réseau utilisé par le jeu et le serveur pour communiquer"
                     },
                     "networkCompressionThreshold": {
-                        "label": "",
-                        "description": ""
+                        "label": "Seuil de compression du réseau",
+                        "description": "Seuil de taille des paquets pour la compression (-1 pour désactiver)"
                     },
                     "rateLimit": {
-                        "label": "",
-                        "description": ""
+                        "label": "Limite de débit",
+                        "description": "Nombre mal de paquets par seconde (0 pour désactiver)"
                     },
                     "playerIdleTimeout": {
-                        "label": "",
-                        "description": ""
+                        "label": "Délai d'inactivité du joueur",
+                        "description": "Temps (en minutes) avant l'explusion du joueur inactif (0 pour désactiver)"
                     },
                     "pauseWhenEmptySeconds": {
-                        "label": "",
-                        "description": ""
+                        "label": "Pause du serveur vide",
+                        "description": "Délai de mise en pause lorsque le serveur est vide (en secondes)"
                     },
                     "enableStatus": {
-                        "label": "",
-                        "description": ""
+                        "label": "Activer le statut",
+                        "description": "Réponse du serveur lorsque la liste de serveur d'un joueur vérifie la disponibilité de celui ci à l'aide d'un ping"
                     },
                     "preventProxyConnections": {
-                        "label": "",
-                        "description": ""
+                        "label": "Empêcher les connexions par proxy",
+                        "description": "Bloquer les joueurs si leur fournisseur d'accès Internet est différent de celui utilisé pour rejoindre."
                     },
                     "logIps": {
-                        "label": "",
-                        "description": ""
+                        "label": "Journalisation des adresses IP",
+                        "description": "Consigne les adresses IP des joueurs dans le journal du serveur."
                     },
                     "acceptsTransfers": {
-                        "label": "",
-                        "description": ""
+                        "label": "Autoriser les transferts de joueurs (à partir de la 1.20.5)",
+                        "description": "Autoriser les joueurs à transférer leur profil d'un autre serveur à celui ci"
                     },
                     "enableRcon": {
-                        "label": "",
-                        "description": ""
+                        "label": "Activer l'RCON",
+                        "description": "Active l'accès distant à la console du serveur"
                     },
                     "rconPort": {
-                        "label": "",
-                        "description": ""
+                        "label": "Port RCON",
+                        "description": "Port utilisé pour les connection RCON"
                     },
                     "rconPassword": {
-                        "label": "",
-                        "description": ""
+                        "label": "Mot de passe RCON",
+                        "description": "Mot de passe nécessaire à l'accès distant de la console RCON"
                     },
                     "broadcastRconToOps": {
-                        "label": "",
-                        "description": ""
+                        "label": "Diffuser RCON aux opérateurs",
+                        "description": "Envoyer la sortie de la console RCON aux opérateurs connectés au serveur"
                     },
                     "enableQuery": {
-                        "label": "",
-                        "description": ""
+                        "label": "Activer la requête",
+                        "description": "Activer le protocole de requête GameSpy4"
                     },
                     "queryPort": {
-                        "label": "",
-                        "description": ""
+                        "label": "Port de requête",
+                        "description": "Port utilisé pour les réponses du protocole de requête"
                     },
                     "managementServerEnabled": {
-                        "label": "",
-                        "description": ""
+                        "label": "Activer le serveur de gestion",
+                        "description": "Activer l'API du serveur de gestion intégré"
                     },
                     "managementServerHost": {
-                        "label": "",
-                        "description": ""
+                        "label": "Serveur hôte de gestion",
+                        "description": "Adresse hôte du serveur de gestion"
                     },
                     "managementServerPort": {
-                        "label": "",
-                        "description": ""
+                        "label": "Port du serveur de gestion",
+                        "description": "Port pour le serveur de gestion (0 pour automatique)"
                     },
                     "managementServerSecret": {
-                        "label": "",
-                        "description": ""
+                        "label": "Secret du serveur de gestion",
+                        "description": "Secret (mot de passe) partagé pour l'authentification du serveur de gestion"
                     },
                     "managementServerAllowedOrigins": {
-                        "label": "",
-                        "description": ""
+                        "label": "Origines autorisées",
+                        "description": "Liste des origines CORS autorisées (séparées par des virgules)"
                     },
                     "managementServerTlsEnabled": {
-                        "label": "",
-                        "description": ""
+                        "label": "Gestion TLS activée",
+                        "description": "Utiliser TLS pour les connexions au serveur de gestion"
                     },
                     "managementServerTlsKeystore": {
-                        "label": "",
-                        "description": ""
+                        "label": "Chemin du répertoire de clé TLS",
+                        "description": "Chemin d'accès au fichier de clés TLS"
                     },
                     "managementServerTlsKeystorePassword": {
-                        "label": "",
-                        "description": ""
+                        "label": "Mot de passe du répertoire de clés TLS",
+                        "description": "Mot de passe du répertoire de clés TLS"
                     },
                     "initialEnabledPacks": {
                         "label": "",
