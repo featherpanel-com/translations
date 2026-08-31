@@ -264,7 +264,7 @@
             "uploading": "Lädt Hoch...",
             "uploaded": "Bild Hochgeladen",
             "upload_failed": "Hochladen Fehlgeschlagen",
-            "too_large": "",
+            "too_large": "Das Bild darf maximal 5 MB groß sein.",
             "clear": "",
             "hint": ""
         },
